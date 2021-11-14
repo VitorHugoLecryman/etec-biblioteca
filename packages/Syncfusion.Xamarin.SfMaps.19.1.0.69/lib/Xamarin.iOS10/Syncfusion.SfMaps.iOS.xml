@@ -1,0 +1,3917 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfMaps.iOS</name>
+    </assembly>
+    <members>
+        <member name="M:Syncfusion.SfMaps.iOS.ASCIIEncoder.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.ASCIIEncoder" /> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ASCIIEncoder.GetChar(System.Byte)">
+            <summary>
+            To get the character
+            </summary>
+            <param name="byteArray">To set byte value</param>
+            <returns>returns character</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ASCIIEncoder.GetString(System.Byte[])">
+            <summary>
+            To get the string value
+            </summary>
+            <param name="byteArray">To set the byte value</param>
+            <returns>returns string</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ASCIIEncoder.GetBytes(System.Char[])">
+            <summary>
+            To get the byte array
+            </summary>
+            <param name="chars">YTo set character array</param>
+            <returns>returns byte array</returns>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.SFMap.timer">
+            <summary>
+            Declare the timer variable
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.Layers">
+            <summary>
+            Gets or sets a value for collecton of layer
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.BaseMapIndex">
+            <summary>
+            Gets or sets a value for base map index
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.ZoomLevel">
+            <summary>
+            Gets or sets a value for zoom level
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.MinimumZoom">
+            <summary>
+            Gets or sets a minimum zoom value
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.MaximumZoom">
+            <summary>
+            Gets or sets a maximum zoom value
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.EnableZooming">
+            <summary>
+            Gets or sets a value indicating whether to enable zooming
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.EnablePanning">
+            <summary>
+            Gets or sets a value indicating whether to enable panning
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.Delegate">
+            <summary>
+            Gets or sete a value for delegate
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.Bubbles">
+            <summary>
+            Gets or sets bubbles.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.Markers">
+            <summary>
+            Gets or sets markers.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.Shapes">
+            <summary>
+            Gets or sets shapefilelayer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.Items">
+            <summary>
+            Gets or sets items.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.Legends">
+            <summary>
+            Gets or sets Legend.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.CurrentZoomLevel">
+            <summary>
+            Gets or sets the current zoom level
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.IsZoomLevelChangedInInteraction">
+            <summary>
+            Gets or sets a value indicating whether the zoom level property has changed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfMaps.iOS.SFMap.Disposed">
+            <summary>
+            Event implemented by the IComponent.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.TooltipView">
+            <summary>
+            Gets or sets the tooltip view
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.Tooltip">
+            <summary>
+            Gets or sets the tooltip
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.CenterPoint">
+            <summary>
+            Gets or sets the value for center point
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.#ctor">
+            <summary>
+             Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFMap" /> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.#ctor(System.IntPtr)">
+            <summary>
+             Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFMap" /> class.
+            </summary>
+            <param name="handle">The handle</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.#ctor(CoreGraphics.CGRect)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFMap" /> class.
+            </summary>
+            <param name="frame">To set the value for frame</param>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.Frame">
+            <summary>
+            To set the frame
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.InitializeShapeLayer">
+            <summary>
+            To initialize the ShapeLayer
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.Site">
+            <summary>
+            Gets or sets the site.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.RefreshMarkers">
+            <summary>
+            To set the markers
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.RefreshLayout">
+            <summary>
+            To refresh the layout.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.Refresh">
+            <summary>
+            To refresh the map.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.AddTileSubLayer(Syncfusion.SfMaps.iOS.SFShapeFileLayer)">
+            <summary>
+            Adds the tile sub layer.
+            </summary>
+            <param name="subLayer">Sub layer.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.ClearCollection">
+            <summary>
+            To clear the collection.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.RefreshSubShapeTileLayer">
+            <summary>
+            Refresh the sub shape layer when resize the map view.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.MarkerTooltip(Syncfusion.SfMaps.iOS.SFMapMarker,Syncfusion.SfMaps.iOS.TooltipSetting,CoreGraphics.CGRect,CoreGraphics.CGPoint,CoreGraphics.CGPoint,System.Single)">
+            <summary>
+            Marker tooltip
+            </summary>
+            <param name="marker">The map marker</param>
+            <param name="tooltipSettings">The tooltip setting</param>
+            <param name="bounds">The tooltip bounds</param>
+            <param name="location">The location</param>
+            <param name="locationInShapeLayer">The location in Shape layer</param>
+            <param name="cumulativeScale">The scale value</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.AutoHide(System.Single)">
+            <summary>
+            Hide the Tooltip without Animation
+            </summary>
+            <param name="duration">The Tooltip duration</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.HandleAction(Foundation.NSTimer)">
+            <summary>
+            Handle the Tooltip duration without Animation
+            </summary>
+            <param name="obj">The timer</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.GetTooltipView(System.Object,Syncfusion.SfMaps.iOS.TooltipSetting)">
+            <summary>
+            Get tooltip view
+            </summary>
+            <param name="shapeData">The Shape data</param>
+            <param name="tooltipSettings">The tooltip setting</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.AutoHide(System.Boolean,System.Single)">
+            <summary>
+            Hide the tooltip
+            </summary>
+            <param name="animated">tooltip Animation</param>
+            <param name="duration">Animation duration</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.GetDefaultView(System.Object,Syncfusion.SfMaps.iOS.TooltipSetting)">
+            <summary>
+            Get default view of the tooltip
+            </summary>
+            <param name="shapeData">Shape data </param>
+            <param name="tooltipSetting">Tooltip settings</param>
+            <returns>Returns the tooltip default view</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.AnimationDidShowStop(Foundation.NSString,Foundation.NSNumber,Foundation.NSObject)">
+            <summary>
+            Start Animation 
+            </summary>
+            <param name="animationID">The animation id</param>
+            <param name="finished">the finished</param>
+            <param name="context">The context</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.AnimationDidHideStop(Foundation.NSString,Foundation.NSNumber,Foundation.NSObject)">
+            <summary>
+            End Animation
+            </summary>
+            <param name="animationID">The animation id</param>
+            <param name="finished">The finished</param>
+            <param name="context">the context</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.PopUpAnimation(UIKit.UIView)">
+            <summary>
+            Tooltip popup animation
+            </summary>
+            <param name="tooltipView"> tooltip view</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.PopDownAnimation(UIKit.UIView)">
+            <summary>
+            Tooltip pop down animation
+            </summary>
+            <param name="view">Tooltip view</param>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMap.TooltipOpeningEventArgs">
+            <summary>
+            Gets or sets the tooltip opening event args property
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfMaps.iOS.SFMap.TooltipOpening">
+            <summary>
+            Gets or sets the event which is raised when tooltip is opening.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMap.OnTooltipOpening(Syncfusion.SfMaps.iOS.TooltipOpeningEventArgs)">
+            <summary>
+            TooltipOpening Event
+            </summary>
+            <param name="args">Tooltip opening event</param>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.SFDataLabelSetting">
+            <summary>
+            Class Implementation of SFDataLabelSetting
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.SFDataLabelSetting.textColor">
+            <summary>
+            Gets or sets value for label text color
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.SFDataLabelSetting.labelFont">
+            <summary>
+            Gets or sets the font style
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.SFDataLabelSetting.smartLabelMode">
+            <summary>
+            Gets or sets the smart label mode
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.SFDataLabelSetting.intersectionAction">
+            <summary>
+            Gets or sets the intersect label mode
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFDataLabelSetting.TextColor">
+            <summary>
+            Gets or sets the color for the data label text.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFDataLabelSetting.Font">
+            <summary>
+            Gets or sets the value for LabelFontStyle
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFDataLabelSetting.SmartLabelMode">
+            <summary>
+            Gets or sets the value for SmartLabelMode
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFDataLabelSetting.IntersectionAction">
+            <summary>
+            Gets or sets the value for IntersectionAction
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFDataLabelSetting.Maps">
+            <summary>
+            Gets or sets the Maps.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ShapeFileDbfData.#ctor">
+            <summary>
+             Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.ShapeFileDbfData" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfData.DbfHeader">
+            <summary>
+            Gets  the dbf data file header. .
+            </summary>		
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfData.DbfFields">
+            <summary>
+            Gets or sets values of DBFFields.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ShapeFileDbfField.#ctor">
+            <summary>
+             Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.ShapeFileDbfField" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfField.Name">
+            <summary>
+            Gets or sets a value for Name
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ShapeFileDbfHeader.#ctor">
+            <summary>
+             Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.ShapeFileDbfHeader" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfHeader.Length">
+            <summary>
+            Gets or sets Length of the Header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfHeader.FileType">
+            <summary>
+            Gets or sets the DBF file type.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfHeader.RecordLength">
+            <summary>
+            Gets or sets the Record length of the DBF file.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfHeader.NumberOfRecords">
+            <summary>
+            Gets or sets number of Reacords in the fle.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfHeader.ShapeFileDbfFields">
+            <summary>
+            Gets or sets the ShapeFileDBFFields.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfHeader.Day">
+            <summary>
+            Gets or sets Day of the DBF file last update.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfHeader.Month">
+            <summary>
+            Gets or sets Month of the DBF file last updated.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfHeader.Year">
+            <summary>
+            Gets or sets Year of the DBF file last updated.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfHeader.EncryptionFlag">
+            <summary>
+            Gets or sets Cuncription flag of the DBF file.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfHeader.FreeRecordThread">
+            <summary>
+            Gets the FreeRecordThread of the DBF file.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfHeader.IncompleteTransaction">
+            <summary>
+            Gets the IncompleteTransaction of the DBF File.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfHeader.LanguageDriver">
+            <summary>
+            Gets the Language Driver of the DBF File.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfHeader.MdxFlag">
+            <summary>
+            Gets the MDX Flag of the DBF File.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfHeader.Reserve1">
+            <summary>
+            Gets the First Reserved byte in the DBF File.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfHeader.Reserve2">
+            <summary>
+            Gets the Second Reserved byte in the DBF File.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfHeader.Reserve3">
+            <summary>
+            Gets the Third Reserved byte in the DBF file.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfHeader.Reserve4">
+            <summary>
+            Gets the fourth Reserved byte in the DBF file.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDbfHeader.Terminator">
+            <summary>
+            Gets the Terminator flag of the DBF file.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.DbfFieldValues">
+            <summary>
+            Class implementation of DbfFielsValues
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.DbfFieldValues.#ctor">
+            <summary>
+             Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.DbfFieldValues" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.DbfFieldValues.Key">
+            <summary>
+            Gets or sets a value for key
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.DbfFieldValues.Value">
+            <summary>
+            Gets or sets a value for Value
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ShapeFileDBFReader.#ctor">
+            <summary>
+             Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.ShapeFileDBFReader" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileDBFReader.DbfData">
+            <summary>
+            Gets or sets a value for ShapeFileDbfData
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfMaps.iOS.ShapeFileDBFReader.DBFFileDownloaded">
+            <summary>
+            Initializes a new instance of the <see cref="T:DBFReader.ShapeFileDBFReader">ShapeFileDBFReader</see> class. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ShapeFileDBFReader.ReadDbfData(System.String)">
+            <summary>
+            Method that Reads the DBF Data.
+            </summary>
+            <param name="filename">To set the file name</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ShapeFileDBFReader.ReadFromStream(System.IO.Stream)">
+            <summary>
+            Method to read the stream
+            </summary>
+            <param name="dbfStream">To set value for stream</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ShapeFileHeader.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.ShapeFileHeader" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileHeader.Length">
+            <summary>
+            Indicate the fixed-length of this header in bytes.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileHeader.FileCode">
+            <summary>
+            Specifies the file code for an ESRI shapefile, which
+            should be the value, 9994.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileHeader.FileLength">
+            <summary>
+            Specifies the length of the shapefile, expressed
+            as the number of 16-bit words in the file.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileHeader.BoundingBox">
+            <summary>
+             Gets or Sets BoundingBox value
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileHeader.Version">
+            <summary>
+            Specifies the shapefile version number.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileHeader.ShapeType">
+            <summary>
+            Specifies the shape type for the file. A shapefile
+            contains only one type of shape.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ShapeFileHeader.ToString">
+            <summary>
+            Converts values to ToString
+            </summary>
+            <returns>returns the string</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapsDelegate.#ctor">
+            <summary>
+             Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFMapsDelegate" /> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapsDelegate.OnMarkerSelected(Syncfusion.SfMaps.iOS.SFMap,Syncfusion.SfMaps.iOS.MarkerSelectedEventArgs)">
+            <summary>
+            Raised when tha marker is selected
+            </summary>
+            <param name="map">SFMap</param>
+            <param name="markerSelectedEventArgs">Mapmarker and Custom View</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapsDelegate.DidZoom(Syncfusion.SfMaps.iOS.SFMap,System.Single)">
+            <summary>
+            To set zoom
+            </summary>
+            <param name="map">To set value for map</param>
+            <param name="level">To set value for level</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapsDelegate.DidPan(Syncfusion.SfMaps.iOS.SFMap,System.Single,System.Single,System.String)">
+            <summary>
+            To check whether the pan is enabled.
+            </summary>
+            <param name="map">To set map value</param>
+            <param name="x">X coordinate of the panning point.</param>
+            <param name="y">Y coordinate of the panning point.</param>
+            <param name="eventState">Current state of the panning event.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapsDelegate.DrawMarker(Syncfusion.SfMaps.iOS.SFMap,Syncfusion.SfMaps.iOS.SFMapMarker,CoreGraphics.CGPoint)">
+            <summary>
+            To draw the marker
+            </summary>
+            <param name="map">To set map value</param>
+            <param name="marker">To set marker value</param>
+            <param name="point">To set point value</param>
+            <returns>returns the view</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapsDelegate.DidLoad(Syncfusion.SfMaps.iOS.SFMap)">
+            <summary>
+            To check whether the map is loaded
+            </summary>
+            <param name="map">To  set value for map</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapsDelegate.DrawMapPoint(Syncfusion.SfMaps.iOS.SFMap,CoreGraphics.CGPoint)">
+            <summary>
+            To draw the map point
+            </summary>
+            <param name="map">To set map point</param>
+            <param name="point">To set point value</param>
+            <returns>returns the view</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapsDelegate.OnTapped(Syncfusion.SfMaps.iOS.SFMap,System.Single,System.Single)">
+            <summary>
+            Occurs when tapped on the map.
+            </summary>
+            <param name="map">SFMap</param>
+            <param name="x">X coordinate of the tapped point.</param>
+            <param name="y">Y coordinate of the tapped point.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapsDelegate.OnPanned(Syncfusion.SfMaps.iOS.SFMap,System.Single,System.Single,System.String)">
+            <summary>
+            Occurs on panning the map.
+            </summary>
+            <param name="map">SFMap</param>
+            <param name="x">X coordinate of the panning point.</param>
+            <param name="y">Y coordinate of the panning point.</param>
+            <param name="eventState">Current state of the event.</param>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapColorMapping.Color">
+            <summary>
+            Gets or sets the color to be desatured.
+            </summary>
+            <value>The color.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapColorMapping.LegendLabel">
+            <summary>
+            Gets or sets the label for legend.
+            </summary>
+            <value>The legend label.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapColorMapping.ShapeFileLayer">
+            <summary>
+            Gets or sets the shape file layer.
+            </summary>
+            <value>The shape file layer.</value>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapColorMapping.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFMapColorMapping" /> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapColorMapping.ValidateColor(System.Object)">
+            <summary>
+            This method used to validate the specified obj.
+            </summary>
+            <returns>The validate</returns>
+            <param name="obj">To set the object</param>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFEqualColorMapping.Value">
+            <summary>
+            Gets or sets the color value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFEqualColorMapping.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFEqualColorMapping" /> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFEqualColorMapping.ValidateColor(System.Object)">
+            <summary>
+            This method is used to validate the object
+            </summary>
+            <param name="obj">To set the object</param>
+            <returns>Returns the object value</returns>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFRangeColorMapping.From">
+            <summary>
+            Gets or sets the range from value.
+            </summary>
+            <value>The from.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFRangeColorMapping.To">
+            <summary>
+            Gets or sets the range to value.
+            </summary>
+            <value>The to.</value>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFRangeColorMapping.Validate(System.Object)">
+            <summary>
+            This method is used to validate the specified object
+            </summary>
+            <param name="obj">To set the object</param>
+            <returns>Returns the value</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFRangeColorMapping.ValidateColor(System.Object)">
+            <summary>
+            This method is used to validate the specified object
+            </summary>
+            <param name="obj">To set the object</param>
+            <returns>Returns the value</returns>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegend.LegendLabel">
+            <summary>
+            Gets or sets a value for LegendLabel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegend.Mapping">
+            <summary>
+            Gets or sets a value for Mapping
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegend.Size">
+            <summary>
+            Gets or sets a value for Size
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegend.IconSize">
+            <summary>
+            Gets or sets a value for IconSize
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegend.SFBubbleMarkerSetting">
+            <summary>
+            Gets or sets a value for SFBubbleMarkerSetting
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegend.SFShapeSetting">
+            <summary>
+            Gets or sets a value for SFShapeSetting
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegend.TextSize">
+            <summary>
+            Gets or sets the size of the text.
+            </summary>
+            <value>The size of the text.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegend.TextColor">
+            <summary>
+            Gets or sets the color of the text.
+            </summary>
+            <value>The color of the text.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegend.TextStyle">
+            <summary>
+            Gets or sets the style of the text.
+            </summary>
+            <value>The style of the text.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegend.ItemMargin">
+            <summary>
+            Gets or sets the spacing of the text.
+            </summary>
+            <value>The spacing of the text.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegend.LabelLength">
+            <summary>
+            Gets or sets the label length for the text.
+            </summary>
+            <value>The label length of the text.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegendSettings.Size">
+            <summary>
+            Gets or sets the size of the legend layer.
+            </summary>
+            <value>The size.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegendSettings.IconSize">
+            <summary>
+            Gets or sets the size of legend icon.
+            </summary>
+            <value>The size of the icon.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegendSettings.ShowLegend">
+            <summary>
+            Gets or sets a value indicating whether to show the legend or not.
+            </summary>
+            <value><c>true</c> if show legend; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegendSettings.Position">
+            <summary>
+            Gets or sets the position of legend.
+            </summary>
+            <value>The position.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegendSettings.LegendIcon">
+            <summary>
+            Gets or sets the icon for legend.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegendSettings.LegendType">
+            <summary>
+            Gets or sets the type of the legend.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegendSettings.TextSize">
+            <summary>
+            Gets or sets the text size of the legend.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegendSettings.TextColor">
+            <summary>
+            Gets or sets the text color of the legend.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegendSettings.Font">
+            <summary>
+            Gets or sets the text style of the legend.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegendSettings.ItemMargin">
+            <summary>
+            Gets or sets the item spacing of the legend.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegendSettings.HorizontalAlignment">
+            <summary>
+            Gets or sets the HorizontalAlignment of the legend.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegendSettings.VerticalAlignment">
+            <summary>
+            Gets or sets the HorizontalAlignment of the legend.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapLegendSettings.SFShapeFileLayer">
+            <summary>
+            Gets or sets the Shape file layer.
+            </summary>
+            <value>The Shape file layer.</value>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapLegendSettings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFMapLegendSettings" /> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapRangeColorMapping.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFMapRangeColorMapping" /> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFJsonFileReader.#ctor">
+            <summary>
+             Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFJsonFileReader" /> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ShapeFileRecord.#ctor">
+            <summary>
+             Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.ShapeFileRecord" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileRecord.RecordIndex">
+            <summary>
+            Indicates the record number (or index) which starts at 1.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileRecord.ContentLength">
+             <summary>
+            Gets or sets the length of this shape record in 16-bit words.
+             </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileRecord.ShapeType">
+            <summary>
+            Specifies the shape type for this record.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileRecord.BoundingBox">
+            <summary>
+            Gets or Sets BoundingBox value
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ShapeFileRecord.GetPartsCount">
+            <summary>
+            /// Indicates the number of parts for this shape.
+            A part is a connected set of points, analogous to
+            a PathFigure in WPF.
+            </summary>
+            <returns>returns the value</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ShapeFileRecord.GetPointsCount">
+            <summary>
+            /// Specifies the total number of points defining
+            this shape record.
+            </summary>
+            <returns>returns the value</returns>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileRecord.Parts">
+            <summary>      
+            A collection of indices for the points array.
+            Each index identifies the starting point of the
+            corresponding part (or PathFigure using WPF
+            terminology).
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileRecord.Points">
+            <summary>
+            A collection of all of the points defining the
+            shape record.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeFileRecord.Attributes">
+            <summary>
+            Access the (dBASE) attribute values associated
+            with this shape record.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ShapeFileRecord.ToString">
+            <summary>
+            Output some of the fields of the shapefile record.
+            </summary>
+            <returns>A string representation of the record.</returns>
+        </member>
+        <member name="E:Syncfusion.SfMaps.iOS.SFShapeFileReader.ShapeFileDownloaded">
+            <summary>
+            Progress Changed Event Handler
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileReader.Records">
+            <summary>
+            Records stores the list of shapefile values
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileReader.Header">
+            <summary>
+             Header property determines the header value 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileReader.BoundingBox">
+            <summary>
+            Gets or sets a value for bounding box
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileReader.#ctor">
+            <summary>
+             Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFShapeFileReader" /> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileReader.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFShapeFileReader" /> class.
+            </summary>
+            <param name="shapefilename">To set the shape file name</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileReader.ReadShapeFile">
+            <summary>
+             Reads the data from ReadShapeFile
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileReader.ReadFromStream(System.IO.Stream)">
+            <summary>
+             Reads data from stream
+            </summary>
+            <param name="fs">To set stream</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileReader.ReadHeader(System.IO.Stream)">
+            <summary>
+            To read the header
+            </summary>
+            <param name="stream">to set value for stream</param>
+            <returns>returns header</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.BoundingBox.#ctor">
+            <summary>
+             Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.BoundingBox" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.BoundingBox.MinX">
+            <summary>
+            Indicates the minimum x-position of the bounding
+            box for the shape (expressed in degrees longitude).
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.BoundingBox.MinY">
+            <summary>
+            Indicates the minimum y-position of the bounding
+            box for the shape (expressed in degrees latitude).
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.BoundingBox.MaxX">
+            <summary>
+            Indicates the maximum x-position of the bounding
+            box for the shape (expressed in degrees longitude).
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.BoundingBox.MaxY">
+            <summary>
+            Indicates the maximum y-position of the bounding
+            box for the shape (expressed in degrees latitude).
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.BoundingBox.#ctor(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+             Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.BoundingBox" /> class.
+            </summary>
+            <param name="minx">To set minimum x value </param>
+            <param name="miny">To set minimum y value</param>
+            <param name="maxx">To set maximum x value</param>
+            <param name="maxy">To set maximum y value</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.Helpers.Split``1(``0[],System.Int32,System.Int32)">
+            <summary>
+            To split the incoming array
+            </summary>
+            <typeparam name="T">To set generic type</typeparam>
+            <param name="source">To set the source value</param>
+            <param name="start">To set the start value</param>
+            <param name="end">To set the end value</param>
+            <returns>returns the generic type</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.Helpers.SplitReverse``1(``0[],System.Int32,System.Int32)">
+            <summary>
+            To reverse the incoming array
+            </summary>
+            <typeparam name="T">To set generic type</typeparam>
+            <param name="source">To set the source value</param>
+            <param name="start">To set the start value</param>
+            <param name="end">To set the end value</param>
+            <returns>returns the generic type</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapMarkerSetting.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFMapMarkerSetting" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapMarkerSetting.IconColor">
+            <summary>
+            Gets or sets the icon color of the bubble.
+            </summary>
+            <value>The color of the icon.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapMarkerSetting.LabelColor">
+            <summary>
+            Gets or sets the label color of the bubble.
+            </summary>
+            <value>The color of the label.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapMarkerSetting.LabelSize">
+            <summary>
+            Gets or sets the size of the label.
+            </summary>
+            <value>The size of the label.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapMarkerSetting.IconSize">
+            <summary>
+            Gets or sets the size of the icon.
+            </summary>
+            <value>The size of the icon.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapMarkerSetting.MarkerIcon">
+            <summary>
+            Gets or sets the various shapes of the maker icon.
+            </summary>
+            <value>The marker icon.</value>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.SFMapMarkerSetting.imageSource">
+            <summary>
+            Gets or sets the imageSource.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapMarkerSetting.ImageSource">
+            <summary>
+            Gets or sets a value indicating whether to change ImageSource
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.SFMapMarkerSetting.verticalAlignment">
+            <summary>
+            Gets or sets the VerticalMarkerAllignment.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapMarkerSetting.VerticalAlignment">
+            <summary>
+            Gets or sets the Vertical position of the marker.
+            </summary>
+            <value>Marker Allignment.</value>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.SFMapMarkerSetting.horizontalAlignment">
+            <summary>
+            Gets or sets the HorizontalMarkerAllignment.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapMarkerSetting.HorizontalAlignment">
+            <summary>
+            Gets or sets the Horizontal position of the marker.
+            </summary>
+            <value>Marker Allignment.</value>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.SFMapMarkerSetting.tooltipSettings">
+            <summary>
+            Gets or sets the tooltip settings
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapMarkerSetting.TooltipSettings">
+            <summary>
+            Gets or sets the tooltip settings
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.BubbleRegion">
+            <summary>
+            Class implementation of Bubble region
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.BubbleRegion.Point">
+            <summary>
+            Gets or sets the point.
+            </summary>
+            <value>The point.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.BubbleRegion.Radius">
+            <summary>
+            Gets or sets the radius.
+            </summary>
+            <value>The radius.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.BubbleRegion.ShapeData">
+            <summary>
+            Gets or sets the shape data.
+            </summary>
+            <value>The shape data.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.BubbleRegion.EnumerableShapeData">
+            <summary>
+            Gets or sets the enumerable shape data.
+            </summary>
+            <value>The enumerable shape data.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapItem.Font">
+            <summary>
+            Gets or sets the text size for data label
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapItem.TextColor">
+            <summary>
+            Gets or sets the text color for data label
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapItem.LabelMode">
+            <summary>
+            Gets or sets the Label mode for MapItem
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapItem.LabelIntersectMode">
+            <summary>
+            Gets or sets the insect mode for MapItem
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapItem.ShapeWidth">
+            <summary>
+            Gets or sets the Shape width for MapItem
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapItem.Bounds">
+            <summary>
+            Gets or sets the Label bounds for MapItem
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapItem.ShapeColor">
+            <summary>
+            Gets or sets the color of the shape.
+            </summary>
+            <value>The color of the shape.</value>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapMarker.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFMapMarker" /> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.SFMapMarker.isSublayer">
+            <summary>
+            This field get enable when this is sub layer for some other layers.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.SFMapMarker.subLayerIndex">
+            <summary>
+            The index of the sub layer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapMarker.Latitude">
+            <summary>
+            Gets or sets the latitude point which determine 
+            the Y-axis position of marker.
+            </summary>
+            <value>The latitude.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapMarker.Longitude">
+            <summary>
+            Gets or sets the Longitude point which determine 
+            the X-axis position of marker.
+            </summary>
+            <value>The longitude.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapMarker.Label">
+            <summary>
+            Gets or sets the Text that displays some information 
+            about the annotation in text format.
+            </summary>
+            <value>The label.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapMarker.ZoomBounds">
+            <summary>
+            Gets or sets the ZoomBounds
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapMarker.IsCustomView">
+            <summary>
+            Gets or sets a value indicating whether the tooltip is custom view.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapMarker.IsDefaultMarker">
+            <summary>
+            Gets or sets a value indicating whether the marker has default view
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapMarker.CircleLayer">
+            <summary>
+            Gets or sets the circle layer.
+            </summary>
+            <value>The circle layer.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapMarker.IsSubLayer">
+            <summary>
+            Gets or sets a value indicating whether is sub layer
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapMarker.SubLayerIndex">
+            <summary>
+            Gets or sets a value indicating whether sub layer index.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapMarker.GetView(CoreGraphics.CGPoint)">
+            <summary>
+            To get the view
+            </summary>
+            <param name="bounds">To set the value for points</param>
+            <returns>returns the view</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapMarker.GetPoint">
+            <summary>
+            To get the point
+            </summary>
+            <returns>returns the point</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapMarker.UpdateDefaultMarkerFrame(UIKit.UIView,CoreGraphics.CGPoint)">
+            <summary>
+            This method is used for update the default marker frame
+            </summary>
+            <param name="markerView">The MarkerView.</param>
+            <param name="bounds">The bounds</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapMarker.SetMarkerLabel(UIKit.UIView,CoreGraphics.CGPoint)">
+            <summary>
+            The method to set the marker label
+            </summary>
+            <param name="view">The view</param>
+            <param name="bounds">The bounds</param>
+            <returns>The marker view</returns>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapShape.StrokeThickness">
+            <summary>
+            Gets or sets the shape stroke thickness
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapShape.ShapeLeftMax">
+            <summary>
+            Gets or sets the shape left point
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapShape.ShapeRightMin">
+            <summary>
+            Gets or sets the shape right point
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapShape.IEnumerableShapeData">
+            <summary>
+            Gets or sets the IE numerable shape data.
+            </summary>
+            <value>The IE numerable shape data.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapShape.ShapeType">
+            <summary>
+            Gets or sets the type of the shape.
+            </summary>
+            <value>The type of the shape.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapShape.HorizontalAlignment">
+            <summary>
+            Gets or sets the value for horizontal alignment.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFMapShape.VerticalAlignment">
+            <summary>
+            Gets or sets the value for vertical alignment.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMaxMin.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFMaxMin" /> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMaxMin.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFMaxMin" /> class.
+            </summary>
+            <param name="max">to set the maximum value</param>
+            <param name="min">To set the minimum value</param>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.SFShapeFileLayer.dataList">
+            <summary>
+            The collection of shape data
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.MapPointIcon">
+            <summary>
+            Gets or sets the map point icon.
+            </summary>
+            <value>The map point icon.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.GeometryType">
+            <summary>
+            Gets or sets the type of the geometry.
+            </summary>
+            <value>The type of the geometry.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.SelectionMode">
+            <summary>
+            Gets or sets the selection mode.
+            </summary>
+            <value>The selection mode.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.MapPointIconSize">
+            <summary>
+            Gets or sets the size of the map point icon.
+            </summary>
+            <value>The size of the map point icon.</value>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.SFShapeFileLayer.horizontalMapPointAlignment">
+            <summary>
+            Gets or sets the value for horizontal alignment
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.MapPointHorizontalAlignment">
+            <summary>
+            Gets or sets the horizontal alignment.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.ShapeReader">
+            <summary>
+            Gets or sets the shape reader.
+            </summary>
+            <value>The shape reader.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.ShapeSettings">
+            <summary>
+            Gets or sets the shape settings.
+            </summary>
+            <value>The shape settings.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.Uri">
+            <summary>
+            Gets or sets the URI.
+            </summary>
+            <value>The URI.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.SelectedItems">
+            <summary>
+            Gets or sets the selected items.
+            </summary>
+            <value>The selected items.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.Points">
+            <summary>
+            Gets or sets the collection of polyline points. It is used to draw multi line over the map by using the points.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.ShapeType">
+             <summary>
+            Gets or sets the type of Points. It is used to define the type of points in the collection.
+             </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.OnShapePointsCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            To refresh the maps when adding or removing or reset the Points.
+            </summary>
+            <param name="sender">To get the sender</param>
+            <param name="e">To get the changed properties</param>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.BubbleMarkerSetting">
+            <summary>
+            Gets or sets the bubble marker setting.
+            </summary>
+            <value>The bubble marker setting.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.DataLabelSettings">
+            <summary>
+            Gets or sets the data label setting.
+            </summary>
+            <value>The data label setting.</value>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.SFShapeFileLayer.tooltipSettings">
+            <summary>
+            Gets or sets the tooltip settings
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.TooltipSettings">
+            <summary>
+            Gets or sets the tooltip settings
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.DataSource">
+            <summary>
+            Gets or sets the data source.
+            </summary>
+            <value>The data source.</value>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.SubLayer_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            To add the sublayer when the collection is changed.
+            </summary>
+            <param name="sender">To get the sender</param>
+            <param name="e">To get the changed properties</param>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.LegendSettings">
+            <summary>
+            Gets or sets the legend settings.
+            </summary>
+            <value>The legend settings.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.ShowMapItems">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfMaps.iOS.SFShapeFileLayer"/> show map items.
+            </summary>
+            <value><c>true</c> if show map items; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.EnableSelection">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfMaps.iOS.SFShapeFileLayer"/> enable selection.
+            </summary>
+            <value><c>true</c> if enable selection; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.ShapeIDPath">
+            <summary>
+            Gets or sets the shape ID Path.
+            </summary>
+            <value>The shape ID Path.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.ShapeIDTableField">
+            <summary>
+            Gets or sets the shape IDT able field.
+            </summary>
+            <value>The shape IDT able field.</value>
+        </member>
+        <member name="E:Syncfusion.SfMaps.iOS.SFShapeFileLayer.ShapeSelectionChanged">
+            <summary>
+            Occur when shapes is selected. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.BubbleRegions">
+            <summary>
+            Gets or sets bubble regions.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.Bubbles">
+            <summary>
+            Gets or sets bubbles.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.Shapes">
+            <summary>
+            Gets or sets shapefilelayer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.Legends">
+            <summary>
+            Gets or sets legends.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.MapItems">
+            <summary>
+            Gets or sets map items.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.SFShapeFileLayer.baseLayer">
+            <summary>
+            Gets or sets the base layer as map layer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.SFShapeFileLayer.isBaseLayer">
+            <summary>
+            Gets or sets a value indicating wheather baselayer is enable or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeFileLayer.LegendLayout">
+            <summary>
+            Gets or sets the legend layout.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFShapeFileLayer" /> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.ReadAsStream(System.IO.Stream)">
+            <summary>
+            Reads the shape file from stream.
+            </summary>
+            <param name="stream">shape file stream</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.ReadAsStream(System.IO.Stream,System.IO.Stream)">
+            <summary>
+            To read the shape file and dbf file stream
+            </summary>
+            <param name="shapeFileStream">stream contains shape file data</param>
+            <param name="dbfFileStream">stream contains dbf file data</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.CreateShapePathFromPoints(System.Collections.Generic.IList{CoreGraphics.CGPoint})">
+            <summary>
+            To create a Map shape from the Points collection.
+            </summary>
+            <param name="points">To get the polyline points</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.CalculateBoundingBox">
+            <summary>
+            To calculate the BoundaryBox value from the Polyline points collection.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.RefreshMarkerSetting">
+            <summary>
+            To refresh the marker setting
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.RefreshPoints">
+            <summary>
+            To refresh the shape file layer point.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.Markers_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Event fired when the marker collection changed
+            </summary>
+            <param name="sender">Shape File Layer</param>
+            <param name="e">Notify Collection Changed Event Args</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.IsSubLayer">
+            <summary>
+            Checks whether the layer is sublayer or not.
+            </summary>
+            <returns>True if it is sublayer, otherwise false.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.ClearMarker(Syncfusion.SfMaps.iOS.SFMapMarker)">
+            <summary>
+             To clear the marker from view
+            </summary>
+            <param name="marker">map marker</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.LegendRefresh">
+            <summary>
+            This method is used to refresh Legends.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.GetLegend">
+            <summary>
+            This method used to get the legend.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.GenerateLegend(System.Collections.ObjectModel.ObservableCollection{Syncfusion.SfMaps.iOS.SFMapColorMapping},Syncfusion.SfMaps.iOS.SFShapeSetting,Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting,Syncfusion.SfMaps.iOS.LegendIcon)">
+            <summary>
+            This method is used to generate legends
+            </summary>
+            <param name="setting">Denote ColorMapping</param>
+            <param name="shapeSetting">Denote ShapeSetting</param>
+            <param name="bubbleMarkerSetting">Denote BubbleMarkerSetting</param>
+            <param name="icon">Denote Legend Icon</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.GenerateMarkers">
+            <summary>
+            Generates markers for shapefile layer.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.GetEnumerable(System.Collections.IEnumerable)">
+            <summary>
+            To get the enumerable data
+            </summary>
+            <param name="dataSource">The data source</param>
+            <returns>Returns the data</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.SetColor(System.Collections.ObjectModel.ObservableCollection{Syncfusion.SfMaps.iOS.SFMapColorMapping},System.Object,System.Boolean)">
+            <summary>
+            This method is used to shape the color
+            </summary>
+            <param name="colorMappings">To set the color mappings</param>
+            <param name="value">To set the value</param>
+            <param name="isShapeColor">To check the colormapping settings</param>
+            <returns>Returns UIColor</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.GetLatitudeLongitudeFromPoint(CoreGraphics.CGPoint)">
+            <summary>
+            Convert Points to latitude and longitude.
+            </summary>
+            <returns>The longitude and latitude.</returns>
+            <param name="pointXY">Point xy.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.GetPointFromLatitudeLongitude(CoreGraphics.CGPoint)">
+            <summary>
+            Convert latitude and longitude to points
+            </summary>
+            <returns>returns the screen point.</returns>
+            <param name="latitudeLongitude">To get the latitude and longitude value</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeFileLayer.ShapeDispose">
+            <summary>
+            Dispose the shape file layers objects.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.MapLayer.markerSettings">
+            <summary>
+            The marker settings.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.MapLayer.MarkerSettings">
+            <summary>
+            Gets or sets the marker settings.
+            </summary>
+            <value>The marker settings.</value>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.MapLayer.markers">
+            <summary>
+            The markers.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.MapLayer.Markers">
+            <summary>
+            Gets or sets the markers.
+            </summary>
+            <value>The markers.</value>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.MapLayer.subLayers">
+            <summary>
+            Gets or sets the sub layer collection for imagery layer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.MapLayer.Sublayers">
+            <summary>
+            Gets or sets the sub layer collection for shape file layer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.MapLayer.ResetOldSelectedView">
+            <summary>
+            Gets or sets a value indicating whether need to remove previous selected view
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.MapLayer.hasMarkerTemplate">
+            <summary>
+            Gets or sets the value for has marker template
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.MapLayer.HasMarkerTemplate">
+            <summary>
+            Gets or sets a value indicating whether the marker template of the forms layer has changed
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.MapLayer.GeopointToViewPoint(System.Double,System.Double)">
+            <summary>
+            Convert latitude and longitude values to view's x and y points.
+            </summary>
+            <param name="latitude">To get latitude</param>
+            <param name="longitude">To get longitude</param>
+            <returns>returns the point x and y from latitude and longitude</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.MapLayer.GetLatLonFromPoint(CoreGraphics.CGPoint)">
+            <summary>
+            Convert point X and point Y to longitude and latitude values
+            </summary>
+            <returns>returns the longitude and latitude values.</returns>
+            <param name="point">to get point</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.MapLayer.CalculateMarkerposition(Syncfusion.SfMaps.iOS.SFMapMarkerSetting,System.Drawing.PointF,System.nfloat,System.nfloat)">
+            <summary>
+            To calculate the custom marker vertical and horizontal position.
+            </summary>
+            <param name="markerSetting">Marker settings.</param>
+            <param name="point">Marker points.</param>
+            <param name="width">Marker width.</param>
+            <param name="height">Marker height.</param>
+            <returns>marker position.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.MapLayer.GetPointFromLatitudeLongitude(CoreGraphics.CGPoint)">
+            <summary>
+            Convert latitude and longitude values to point X and point Y values
+            </summary>
+            <param name="latLong">To get latitude and longitude</param>
+            <returns>returns the point X and point Y from latitude and longitude</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.MapLayer.GetLatitudeLongitudeFromPoint(CoreGraphics.CGPoint)">
+            <summary>
+            Convert point X and point Y to longitude and latitude values
+            </summary>
+            <returns>returns the longitude and latitude values.</returns>
+            <param name="latLong">to get longitude and latitude</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.MapLayer.RemoveMarkerView(Syncfusion.SfMaps.iOS.SFMapMarker)">
+            <summary>
+            Removes the marker from its super view.
+            </summary>
+            <param name="marker">Marker to be removed.</param>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.MarkerSelectedEventArgs">
+            <summary>
+            Class implementation of MarkerSelectedEventArgs
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.MarkerSelectedEventArgs.selectedMarker">
+            <summary>
+            The selected marker.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.MarkerSelectedEventArgs.selectedMarkerView">
+            <summary>
+            The selected marker view.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.MarkerSelectedEventArgs.SelectedMarker">
+            <summary>
+            Gets the value for selected marker
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.MarkerSelectedEventArgs.SelectedMarkerView">
+            <summary>
+            Gets or sets the view for selected marker
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.MarkerSelectedEventArgs.CanBringToTop">
+            <summary>
+            Gets or sets a value indicating whether the boolean value is to bring the top position of selected marker.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.ShapeSelectedEventArgs">
+            <summary>
+            Class implementation of ShapeSelectedEventArgs
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ShapeSelectedEventArgs.data">
+            <summary>
+            the selected data
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ShapeSelectedEventArgs.isSelected">
+            <summary>
+            displays whether shape selected or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeSelectedEventArgs.Data">
+            <summary>
+            Gets and Sets value for Data
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ShapeSelectedEventArgs.IsSelected">
+            <summary>
+            Gets a value indicating whether the shape selected or not.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.TooltipOpeningEventArgs">
+            <summary>
+            Class implementation of TooltipOpeningEventArgs
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipOpeningEventArgs.cancel">
+            <summary>
+            Declare the cancel field
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipOpeningEventArgs.data">
+            <summary>
+            Declare the data field
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipOpeningEventArgs.tooltipType">
+            <summary>
+            Declare the tooltip type
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TooltipOpeningEventArgs.Cancel">
+            <summary>
+            Gets or sets a value indicating whether the Cancel property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TooltipOpeningEventArgs.Data">
+            <summary>
+            Gets and internal sets the Data
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TooltipOpeningEventArgs.TooltipType">
+            <summary>
+            Gets and internal sets the tooltipType
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting.TooltipSettings">
+            <summary>
+             Gets or sets the the tooltip setting 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting.ValuePath">
+            <summary>
+            Gets or sets the the field value that is to be fetched from data for each bubble
+            </summary>
+            <value>The value path.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting.ColorValuePath">
+            <summary>
+            Gets or sets the field value that is to be fetched from data for each bubble 
+            used for determining the bubble color.
+            </summary>
+            <value>The color value path.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting.MinSize">
+            <summary>
+            Gets or sets the minimum size of the bubble.
+            </summary>
+            <value>The minimum size.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting.MaxSize">
+            <summary>
+            Gets or sets the maximum size of the bubble.
+            </summary>
+            <value>The size of the max.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting.FillColor">
+            <summary>
+            Gets or sets the color of the bubble 
+            </summary>
+            <value>The color of the fill.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting.Opacity">
+            <summary>
+            Gets or sets the opacity of the bubble.
+            </summary>
+            <value>The opacity.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting.ShowBubbles">
+            <summary>
+            Gets or sets a value indicating whether to show bubbles or not.
+            </summary>
+            <value><c>true</c> if show bubbles; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting.colorMapping">
+            <summary>
+            Gets or sets List<ColorMapping></ColorMapping>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting.ColorMappings">
+            <summary>
+            Gets or sets the color mapping  
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting.ShapeFileLayer">
+            <summary>
+            Gets or sets the shape file layer
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeSetting.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFShapeSetting" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeSetting.Fill">
+            <summary>
+            Gets or sets fill color of the shapes in the map.
+            </summary>
+            <value>The fill.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeSetting.SelectedShapeColor">
+            <summary>
+            Gets or sets the selection color for shapes in the map.
+            </summary>
+            <value>The color of the selected shape.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeSetting.StrokeThickness">
+            <summary>
+            Gets or sets the border thickness of the shape in the map.
+            </summary>
+            <value>The stroke thickness.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeSetting.SelectedShapeStrokeThickness">
+            <summary>
+            Gets or sets the border thickness of the selected shape in the map.
+            </summary>
+            <value>The selected shape stroke thickness.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeSetting.StrokeColor">
+            <summary>
+            Gets or sets the stroke color of the shapes in the map.
+            </summary>
+            <value>The color of the stroke.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeSetting.ColorMappings">
+            <summary>
+            Gets or sets the list of colorMapping value to the map.
+            </summary>
+            <value>The color mappings.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeSetting.ValuePath">
+            <summary>
+            Gets or sets the field value that is to be fetched from data for each shape.
+            </summary>
+            <value>The value path.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeSetting.ColorValuePath">
+            <summary>
+            Gets or sets he field value that is to be fetched from data for
+            each shape used for determining the shape color.
+            </summary>
+            <value>The color value path.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeSetting.SelectedShapeStrokeColor">
+            <summary>
+            Gets or sets the stroke color for selectedshapes in the map.
+            </summary>
+            <value>The color of the selected shape.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeSetting.ShapeFileLayer">
+            <summary>
+            Gets or sets the shape file layer.
+            </summary>
+            <value>The shape file layer.</value>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeSetting.Dispose(System.Boolean)">
+            <summary>
+            Dispose shape settings objects.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.LegendLayout.#ctor(CoreGraphics.CGRect)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.LegendLayout" /> class.
+            </summary>
+            <param name="frame">To set frame</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.LegendLayout.LayoutSubviews">
+            <summary>
+            This method is used for setting the layer sub view
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.LegendLayout.MeasureSize">
+            <summary>
+            This method is used to measure the size
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeLayer.IsOrientationChanged">
+            <summary>
+            Gets or sets a value indicating whether the orientation is changed
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeLayer.XCoordinate">
+            <summary>
+            Gets or sets the value foe x coordinate
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeLayer.YCoordinate">
+            <summary>
+            Gets or sets the value for y coordinate
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.SFShapeLayer.panGestureRecognizer">
+            <summary>
+            Handles the shape layer pan gesture.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.SFShapeLayer.isChildtoTileLayer">
+            <summary>
+            This variable get enable when this layer is child to tile layer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.SFShapeLayer.previousMarker">
+            <summary>
+            Gets or sets a value for previous marker
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeLayer.initialFrame">
+            <summary>
+            Gets or sets the initial frame
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeLayer.IsTooltipRendered">
+            <summary>
+            Gets or sets a value indicating whether the tooltip is rendered.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFShapeLayer.IsChildtoTileLayer">
+            <summary>
+            Gets or sets a value indicating whether is child to tile layer
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.#ctor">
+            <summary>
+             Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFShapeLayer" /> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.#ctor(CoreGraphics.CGRect)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFShapeLayer" /> class.
+            </summary>
+            <param name="frame">To set value for frame</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.UpdateSelection">
+            <summary>
+            Update the selected shape.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.HandleSingleTap(UIKit.UITapGestureRecognizer)">
+            <summary>
+            Handle Single tap for Shape Layer
+            </summary>
+            <param name="tapper">The tap location</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.RaiseShapeSelectedEvent(CoreGraphics.CGPoint)">
+            <summary>
+            Raises the shape selected event.
+            </summary>
+            <param name="location">The location</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.RaiseMarkerSelectedEvent(CoreGraphics.CGPoint)">
+            <summary>
+            Raises the marker selected event.
+            </summary>
+            <param name="location">The Location.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.SetPreviousMarker(Syncfusion.SfMaps.iOS.SFMapMarker,Syncfusion.SfMaps.iOS.MarkerSelectedEventArgs)">
+            <summary>
+            The previous marker position is calculated and added to the view.
+            </summary>
+            <param name="marker">The map marker.</param>
+            <param name="args">Marker selected event arguments.</param>
+            <returns>Map marker.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.LayoutSubviews">
+            <summary>
+            This method is used for setting the layout sub views
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.UpdateLayout">
+            <summary>
+            This method is used for updating the layouts.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.GestureRecognizer_ShouldBegin(UIKit.UIGestureRecognizer)">
+            <summary>
+            Handles the maps shape layer pan gesture event for application level touches.
+            </summary>
+            <param name="recognizer">UI gesture recognizer.</param>
+            <returns>Pan gesture should continue or not.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.HandlePan(UIKit.UIPanGestureRecognizer)">
+            <summary>
+            Handles the scroll view pan gesture.
+            </summary>
+            <param name="panGestureRecognizer">pan gesture recognizer.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.AddMapPoint(Syncfusion.SfMaps.iOS.SFMapShape)">
+            <summary>
+            This method is to add the map points into the view
+            </summary>
+            <param name="mapShape">The map shape</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.AddMapItem">
+            <summary>
+            To implement the MapItem
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.TrimmedLabel(Syncfusion.SfMaps.iOS.SFMapItem,System.nfloat)">
+            <summary>
+            To implement the trim label
+            </summary>
+            <param name="item">To store the map item details</param>
+            <param name="shapeWidth">Use the shape width to trim the text</param>
+            <returns>Returns the trimmed label</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.DrawIntersectItem(Syncfusion.SfMaps.iOS.SFMapItem,UIKit.UILabel)">
+            <summary>
+            To implement the intersect map item
+            </summary>
+            <param name="item">To store the map item details</param>
+            <param name="text"> The actual text</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.IntersectTrimLabel(Syncfusion.SfMaps.iOS.SFMapItem,System.Drawing.Rectangle,UIKit.UILabel)">
+            <summary>
+            To implement the intersect trim label
+            </summary>
+            <param name="item">To store the map item details</param>
+            <param name="rect">To store the intersect item bounds</param>
+            <param name="text">The actual text</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.RefreshMarkers">
+            <summary>
+            Refresh Marker
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.DisposeShapeLayer">
+            <summary>
+            Dispose the unhooked events in shape layer.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.SetMarkerposition(System.nfloat)">
+            <summary>
+            Sets the marker position based on the scale value.
+            </summary>
+            <param name="scale">It contain zoom value</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.RePosition(System.nfloat)">
+            <summary>
+            Re position the bubble, marker and shapes.
+            </summary>
+            <param name="scale">It contain zoom value</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.ContrastColor(CoreGraphics.CGColor)">
+            <summary>
+            Contrasts the color.
+            </summary>
+            <returns>Returns the map item color</returns>
+            <param name="color">The Color of the map item </param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.AddMarkerTooltip(CoreGraphics.CGPoint)">
+            <summary>
+            Create tooltip for marker
+            </summary>
+            <param name="locationInShapeLayer">Touch point</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.AddBubbleTooltip(CoreGraphics.CGPoint,CoreGraphics.CGPoint)">
+            <summary>
+            Create tooltip for bubble
+            </summary>
+            <param name="location"> bubble location</param>
+            <param name="locationInShapeLayer"> Touch point</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.BubbleTooltip(Syncfusion.SfMaps.iOS.BubbleRegion,Syncfusion.SfMaps.iOS.TooltipSetting,CoreGraphics.CGPoint,CoreGraphics.CGPoint)">
+            <summary>
+            Bubble Tooltip
+            </summary>
+            <param name="selectedBubble"> The selected bubble</param>
+            <param name="tooltipSettings">The Tooltip setting</param>
+            <param name="location">the location</param>
+            <param name="locationInShapeLayer">The location in ShapeLayer</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.IsPointInsideCircle(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Bubble Selection
+            </summary>
+            <param name="xc">Bubble center x point</param>
+            <param name="yc">Bubble center y point</param>
+            <param name="r">the Radius</param>
+            <param name="x">The touch x position</param>
+            <param name="y">The touch y position</param>
+            <returns>Returns the bubble inside circle</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFShapeLayer.CreateTooltip(CoreGraphics.CGPoint,CoreGraphics.CGPoint)">
+            <summary>
+            Create Tooltip for ShapeLayer
+            </summary>
+            <param name="location">Touched point</param>
+            <param name="locationInShapeLayer"> Location in ShapeLayer</param>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.SFScrollViewDelegate.ShapeLayer">
+            <summary>
+            Gets or sets a value for MapLayer
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFScrollViewDelegate.#ctor(Syncfusion.SfMaps.iOS.SFShapeLayer)">
+            <summary>
+             Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.SFScrollViewDelegate" /> class.
+            </summary>
+            <param name="shapeLayer">To set the value for map layer</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFScrollViewDelegate.DidZoom(UIKit.UIScrollView)">
+            <summary>
+            This method is used for zooming
+            </summary>
+            <param name="scrollView">To set scroll view</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFScrollViewDelegate.Scrolled(UIKit.UIScrollView)">
+            <summary>
+            This method is used for scrolling
+            </summary>
+            <param name="scrollView"> To set the value for scroll view</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFScrollViewDelegate.ViewForZoomingInScrollView(UIKit.UIScrollView)">
+            <summary>
+            To view the zooming in scroll view
+            </summary>
+            <param name="scrollView">To set the value for scroll view</param>
+            <returns>returns the view</returns>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.TooltipSetting">
+            <summary>
+            The Class implementation of Tooltip setting
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipSetting.showTooltip">
+            <summary>
+            Declare the showTooltip field
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipSetting.canAnimate">
+            <summary>
+            Declare the canAnimate field
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipSetting.valuePath">
+            <summary>
+            Declare the valuePath field
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipSetting.duration">
+            <summary>
+            Declare the duration field
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipSetting.pointerLength">
+            <summary>
+             Declare the pointerLength field
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipSetting.backgroundColor">
+            <summary>
+            Declare the backgroundColor field
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipSetting.textColor">
+            <summary>
+            Declare the textColor field
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipSetting.font">
+            <summary>
+            Declare the font field
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipSetting.edgeInsets">
+            <summary>
+            Declare the edgeInsets field
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipSetting.strokeWidth">
+            <summary>
+            Declare the stroke width field
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipSetting.strokeColor">
+            <summary>
+            Declare the stroke color field
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TooltipSetting.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.TooltipSetting" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TooltipSetting.ShowTooltip">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfMaps.iOS.TooltipSetting"/> show tooltip.
+            </summary>
+            <value><c>true</c> if show tooltip; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TooltipSetting.CanAnimate">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfMaps.iOS.TooltipSetting"/> can animate.
+            </summary>
+            <value><c>true</c> if can animate; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TooltipSetting.ValuePath">
+            <summary>
+            Gets or sets the value path.
+            </summary>
+            <value>The value path.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TooltipSetting.Duration">
+            <summary>
+            Gets or sets the duration.
+            </summary>
+            <value>The duration.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TooltipSetting.BackgroundColor">
+            <summary>
+            Gets or sets the color of the background.
+            </summary>
+            <value>The color of the background.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TooltipSetting.TextColor">
+            <summary>
+            Gets or sets the color of the text.
+            </summary>
+            <value>The color of the text.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TooltipSetting.Font">
+            <summary>
+            Gets or sets the font.
+            </summary>
+            <value>The font.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TooltipSetting.EdgeInsets">
+            <summary>
+            Gets or sets the edge insets.
+            </summary>
+            <value>The edge insets.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TooltipSetting.PointerLength">
+            <summary>
+            Gets or sets the length of the pointer.
+            </summary>
+            <value>The length of the pointer.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TooltipSetting.StrokeWidth">
+            <summary>
+            Gets or sets the stroke width.
+            </summary>
+            <value>The stroke width.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TooltipSetting.StrokeColor">
+            <summary>
+            Gets or sets the color of the stroke.
+            </summary>
+            <value>The color of the stroke.</value>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TooltipSetting.GetView(System.Object)">
+            <summary>
+            Gets the view.
+            </summary>
+            <returns>The view.</returns>
+            <param name="shapeData">Shape data.</param>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.TooltipType">
+            <summary>
+            Tooltip type.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipType.Top">
+            <summary>
+            The top.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipType.Bottom">
+            <summary>
+            The bottom.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.TooltipView">
+            <summary>
+            Tooltip view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipView.backgroundRect">
+            <summary>
+            Declare the background rectangle field
+            </summary>        
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipView.nosePointX">
+            <summary>
+            Declare the x, y, nosePointX, nosePointY, pointer  length field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipView.nosePointY">
+            <summary>
+            Declare the x, y, nosePointX, nosePointY, pointer  length field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipView.xPos">
+            <summary>
+            Declare the x, y, nosePointX, nosePointY, pointer  length field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipView.yPos">
+            <summary>
+            Declare the x, y, nosePointX, nosePointY, pointer  length field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipView.width">
+            <summary>
+            Declare the x, y, nosePointX, nosePointY, pointer  length field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipView.height">
+            <summary>
+            Declare the x, y, nosePointX, nosePointY, pointer  length field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipView.pointerLength">
+            <summary>
+            Declare the x, y, nosePointX, nosePointY, pointer  length field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipView.edge">
+            <summary>
+            Declare the edge field
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TooltipView.tooltipContentView">
+            <summary>
+            Declare the tooltip content view
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TooltipView.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.TooltipView"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TooltipView.Map">
+            <summary>
+            Gets or sets the map.
+            </summary>
+            <value>The map.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TooltipView.TooltipSettings">
+            <summary>
+            Gets or sets the tooltip settings.
+            </summary>
+            <value>The tooltip settings.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TooltipView.IsDefaultView">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfMaps.iOS.TooltipView"/> is default view.
+            </summary>
+            <value><c>true</c> if is default view; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TooltipView.TooltipType">
+            <summary>
+            Gets or sets a value of tooltip type.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TooltipView.Draw(CoreGraphics.CGRect)">
+            <summary>
+            Draw the tooltip view.
+            </summary>
+            <param name="rect">tooltip view rectangle.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TooltipView.CalculateViewPostion(UIKit.UIView,System.Single,System.Single,UIKit.UIView)">
+            <summary>
+            Calculates the view position.
+            </summary>
+            <param name="view">content view.</param>
+            <param name="x">The x coordinate.</param>
+            <param name="y">The y coordinate.</param>
+            <param name="tooltipView">Tooltip view.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TooltipView.DrawLabelBackground(CoreGraphics.CGRect,CoreGraphics.CGPoint,System.nfloat)">
+            <summary>
+            Draws the label background.
+            </summary>
+            <param name="rect">background rectangle.</param>
+            <param name="position">tooltip Position.</param>
+            <param name="cornerRadius">corner radius.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TooltipView.DrawTopLabelRoundedRect(CoreGraphics.CGContext,CoreGraphics.CGRect,CoreGraphics.CGPoint,CoreGraphics.CGPoint,CoreGraphics.CGPoint,System.nfloat)">
+            <summary>
+            Draws the top label rounded rectangle.
+            </summary>
+            <param name="ctx">tooltip context.</param>
+            <param name="rect">tooltip rectangle.</param>
+            <param name="position">tooltip position.</param>
+            <param name="startPosition">Start position.</param>
+            <param name="endPosition">End position.</param>
+            <param name="cornerRadius">tooltip corner radius.</param>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.LayerType">
+            <summary>
+            Layer type of ImageryLayer
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.LayerType.OSM">
+            <summary>
+            Define OSM layer type
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.LayerType.Bing">
+            <summary>
+            Define Bing layer type
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.BingMapStyle">
+            <summary>
+            BingMapStyle of ImageryLayer
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.BingMapStyle.Road">
+            <summary>
+            Defines Road view of bing map
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.BingMapStyle.Aerial">
+            <summary>
+            Defines Aerial view of bing map
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.BingMapStyle.AerialWithLabels">
+            <summary>
+            Defines Aerial with labels view of bing map
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.LegendType">
+            <summary>
+            Represents the Legend Type
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.LegendType.Layers">
+            <summary>
+            Defines the ShapeSetting as layers.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.LegendType.Bubbles">
+            <summary>
+            Defines the BubbleMarkerSetting as bubbles.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.LegendIcon">
+            <summary>
+            Represents the Legend icon.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.LegendIcon.Default">
+            <summary>
+            Represents default.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.LegendIcon.Circle">
+            <summary>
+            Represents circle.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.LegendIcon.Rectangle">
+            <summary>
+            Represents rectangle.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.LegendIcon.Diamond">
+            <summary>
+            Represents Diamond.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.LegendIcon.Triangle">
+            <summary>
+            Represents Triangle.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.HorizontalAlignment">
+            <summary>
+            Represents the Legend Horizontal Alignment
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.HorizontalAlignment.Start">
+            <summary>
+            The start.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.HorizontalAlignment.Centre">
+            <summary>
+            The centre.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.HorizontalAlignment.End">
+            <summary>
+            The end.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.VerticalAlignment">
+            <summary>
+            Represents the Legend Vertical Alignment.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.VerticalAlignment.Top">
+            <summary>
+            The top.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.VerticalAlignment.Centre">
+            <summary>
+            The centre.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.VerticalAlignment.Bottom">
+            <summary>
+            The bottom.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.IntersectAction">
+            <summary>
+             Intersect action for DataLabel
+             </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.IntersectAction.None">
+            <summary>
+            Defines None for IntersectAction
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.IntersectAction.Trim">
+            <summary>
+            Defines Trim for IntersectAction
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.IntersectAction.Hide">
+            <summary>
+            Defines Hide for IntersectAction
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.MarkerAlignment">
+            <summary>
+             Represents the Marker Alignment
+             </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.MarkerAlignment.Near">
+            <summary>
+            Near position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.MarkerAlignment.Center">
+            <summary>
+            Center position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.MarkerAlignment.Far">
+            <summary>
+            Far position
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.ShapeType">
+            <summary>
+            Gets or sets ShapeType
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ShapeType.Polyline">
+            <summary>
+            Defines Polyline points in the collection
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ShapeType.Polygon">
+            <summary>
+            Defines Polygon points in the collection
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ShapeType.PointIcon">
+            <summary>
+            Defines Geo points in the collection
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.MapShapeType.NullShape">
+            <summary>
+            Nullshape / placeholder record.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.MapShapeType.Point">
+            <summary>
+            Point record, for defining point locations such as a city.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.MapShapeType.PolyLine">
+            <summary>
+            One or more sets of connected points. Used to represent roads,
+            hydrography, etc.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.MapShapeType.Polygon">
+            <summary>
+            One or more sets of closed figures. Used to represent political
+            boundaries for countries, lakes, etc.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.MapShapeType.Multipoint">
+            <summary>
+            A cluster of points represented by a single shape record.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.DBFDocument.#ctor(Foundation.NSString)">
+            <summary>
+             Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.DBFDocument" /> class.
+            </summary>
+            <param name="path">To set the value for path</param>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.DistanceType">
+            <summary>
+            Represents the radius distance
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.DistanceType.Meter">
+            <summary>
+            Distance in meters
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.DistanceType.KiloMeter">
+            <summary>
+            Distance in kilometers
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.DistanceType.Mile">
+            <summary>
+            Distance in miles
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.Position">
+            <summary>
+            Defines the position struct
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.Position.#ctor(System.Double,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.Position" /> struct.
+            </summary>
+            <param name="latitude">latitude value</param>
+            <param name="longitude">longitude value</param>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.Position.Latitude">
+            <summary>
+            Gets or sets the latitude of map position in decimal degrees.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.Position.Longitude">
+            <summary>
+            Gets or sets the longitude of map position in decimal degrees.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.Position.op_Equality(Syncfusion.SfMaps.iOS.Position,Syncfusion.SfMaps.iOS.Position)">
+            <summary>
+            Checks the position values
+            </summary>
+            <param name="x">X Position</param>
+            <param name="y">Y Position</param>
+            <returns>return true/false</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.Position.op_Inequality(Syncfusion.SfMaps.iOS.Position,Syncfusion.SfMaps.iOS.Position)">
+            <summary>
+            Checks the position values
+            </summary>
+            <param name="x">X Position</param>
+            <param name="y">Y Position</param>
+            <returns>return true/false</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.Position.Equals(System.Object)">
+            <summary>
+            Checks the object data type is to equal
+            </summary>
+            <param name="obj">object value</param>
+            <returns>return true/false</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.Position.GetHashCode">
+            <summary>
+            It override to get hash code
+            </summary>
+            <returns>returns hash code</returns>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ImageryLayer.layerType">
+            <summary>
+            Gets or sets the layer type
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ImageryLayer.bingMapKey">
+            <summary>
+            Gets or sets the value for bing map key
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ImageryLayer.geoCoordinates">
+            <summary>
+            Gets or sets the geo coordinates point
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ImageryLayer.bingMapStyle">
+            <summary>
+            Gets or sets the bing map style
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ImageryLayer.markers">
+            <summary>
+            Gets or sets the map marker collections
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ImageryLayer.resetOnDoubleTap">
+            <summary>
+            The reset on double tap.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ImageryLayer.canCacheTile">
+            <summary>
+            Gets or sets a value indicating whether to save the tiles in cache
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ImageryLayer.latLngBounds">
+            <summary>
+            Gets or sets the geo bounds based on southwest and northeast corner geo points to calculate auto zoom level.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ImageryLayer.radius">
+            <summary>
+            Gets or sets the radius distance from center position to calculate the auto zoom level.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ImageryLayer.distanceType">
+            <summary>
+            Gets or sets the radius distance type in meters or kilometers or miles to calculate the auto zoom level.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ImageryLayer.displayLink">
+            <summary>
+            Gets or sets the display link for animation.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ImageryLayer.duration">
+            <summary>
+            Gets or set the animation duration.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ImageryLayer.timeOffset">
+            <summary>
+            Gets or sets the offset time for animation.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ImageryLayer.previousAnimationTime">
+            <summary>
+            Gets or sets the previous step value in animation.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ImageryLayer.previousGeoPoint">
+            <summary>
+            Gets or sets the previous geo coordinates value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ImageryLayer.currentGeoPoint">
+            <summary>
+            Gets or sets the current geo coordinates value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ImageryLayer.internalGeoPoint">
+            <summary>
+            Gets or sets the geo coordinates value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ImageryLayer.isAnimationCompleted">
+            <summary>
+            Gets or sets a value that indicates whether animation has completed or not.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.ImageryLayer"/> class.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfMaps.iOS.ImageryLayer.ZoomLevelChanging">
+            <summary>
+            Gets or sets the event which is raised when the zoom level is changing
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfMaps.iOS.ImageryLayer.GeoCoordinateChanged">
+            <summary>
+            Gets or sets the event which is raised when the panning is changing
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ImageryLayer.LayerType">
+            <summary>
+            Gets or sets the type of the layer.
+            </summary>
+            <value>The type of the layer.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ImageryLayer.BingMapKey">
+            <summary>
+            Gets or sets the bing map key.
+            </summary>
+            <value>The bing map key.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ImageryLayer.BingMapStyle">
+            <summary>
+            Gets or sets the bing map style.
+            </summary>
+            <value>The bing map style.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ImageryLayer.GeoCoordinates">
+            <summary>
+            Gets or sets the geo coordinates.
+            </summary>
+            <value>The geo coordinates.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ImageryLayer.ResetOnDoubleTap">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfMaps.iOS.ImageryLayer"/> reset on
+            double tap.
+            </summary>
+            <value><c>true</c> if reset on double tap; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ImageryLayer.CanCacheTiles">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfMaps.iOS.ImageryLayer"/> can cache tiles.
+            </summary>
+            <value><c>true</c> if can cache tiles; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ImageryLayer.MapBounds">
+            <summary>
+            Gets the imagery layer bounds value (x, y, width, height).
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ImageryLayer.LatLngBounds">
+            <summary>
+            Gets or sets the geo bounds based on southwest and northeast corner geo points to calculate auto zoom level.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ImageryLayer.DistanceType">
+            <summary>
+            Gets or sets the radius distance type in meters or kilometers or miles to calculate the auto zoom level.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ImageryLayer.Radius">
+            <summary>
+            Gets or sets the radius distance from center position to calculate the auto zoom level.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ImageryLayer.TileLayer">
+            <summary>
+            Gets or sets the tile layer
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ImageryLayer.TileBounds">
+            <summary>
+            Gets or sets the map bounds of imagery layer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ImageryLayer.Northeast">
+            <summary>
+            Gets or sets the north east coordinate. Range checked (-90, 90) and (-180, 180).
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ImageryLayer.Southwest">
+            <summary>
+            Gets or sets the south west coordinate. Range checked (-90, 90) and (-180, 180).
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ImageryLayer.ControlSize">
+            <summary>
+            Gets or sets the value for control size
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ImageryLayer.Map">
+            <summary>
+            Gets or sets the map
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ImageryLayer.IsCenterChangedInInteraction">
+            <summary>
+            Gets or sets a value indicating whether the center point has changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ImageryLayer.IsCenterChangedInSetter">
+            <summary>
+            Gets or sets a value indicating whether the center point has changed in setter.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ImageryLayer.IsFormsBindingContextChanged">
+            <summary>
+            Gets or sets a value indicating whether the forms binding context is changed or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ImageryLayer.InternalGeoPoint">
+            <summary>
+            Gets or sets the geo coordinates internally.
+            </summary>
+            <value>The geo coordinates.</value>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.DeleteTilesFromCache">
+            <summary>
+            To delete the tiles saved in application cache
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.CalculateLatLngBounds">
+            <summary>
+            Checks to execute zoom level calculation
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.GetPointFromLatitudeLongitude(CoreGraphics.CGPoint)">
+            <summary>
+            Method is used for convert the latitude and longitude value to pixel value
+            </summary>
+            <param name="latitudeLongitude">To get the latitude and longitude value</param>
+            <returns>returns the pixel value</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.GetLatitudeLongitudeFromPoint(CoreGraphics.CGPoint)">
+            <summary>
+            Method used for convert the pixel value to longitude and latitude value
+            </summary>
+            <param name="point">To get point value</param>
+            <returns>latitude and longitude</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.CalculateZoomLevel">
+            <summary>
+            To Calculate zoom level based on north east and south west points.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.CalculateBounds">
+            <summary>
+            To calculate north east and south west value to calculate zoom level
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.GenerateMarkers">
+            <summary>
+            Method used for generating the markers
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.OnZoomLevelChanging(Syncfusion.SfMaps.iOS.ZoomLevelChangingEventArgs)">
+            <summary>
+            To store the event argument value
+            </summary>
+            <param name="args">The args contains new level, old level and cancel property</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.OnGeoCoordinateChanged">
+            <summary>
+            To store the event argument value
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.SubLayer_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            To add the sub layer when the collection is changed.
+            </summary>
+            <param name="sender">To get the sender</param>
+            <param name="e">To get the changed properties</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.GetUri(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            This method returns Uri for downloading tile
+            </summary>
+            <param name="X">X-Coordinate</param>
+            <param name="Y">Y- Coordinate</param>
+            <param name="Scale">Scale value</param>
+            <returns> Uri link </returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.Interpolate(CoreGraphics.CGPoint,CoreGraphics.CGPoint,System.Double)">
+            <summary>
+            Returns the intermediate value based on the previous and current geo point.
+            </summary>
+            <param name="previousGeoPoint">Previous geo location value.</param>
+            <param name="currentGeoPoint">Current geo location value.</param>
+            <param name="time">current time</param>
+            <returns>Intermediate geo location.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.Markers_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Raised when the marker collection changed
+            </summary>
+            <param name="sender">ImageryLayer</param>
+            <param name="e">collectionChangedEventArgs</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.UpdateGeoPoint">
+            <summary>
+            Updates the geo location and render tiles based on that.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.CheckGeoBoundsRange(Syncfusion.SfMaps.iOS.Position)">
+            <summary>
+            To check the bounds value with in the limit
+            </summary>
+            <param name="coordinate">Geo Coordinates</param>
+            <returns>return bounds</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.GetBoundsZoomLevel(Syncfusion.SfMaps.iOS.Position,Syncfusion.SfMaps.iOS.Position,System.Double,System.Double)">
+            <summary>
+            To calculate zoom level with the north east and south west bounds
+            </summary>
+            <param name="northeast">north east bounds</param>
+            <param name="southWest">south west bounds</param>
+            <param name="width">control width</param>
+            <param name="height">control height</param>
+            <returns>minimum zoom level</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.FindRadius(System.Double)">
+            <summary>
+            To calculate the radius of the latitude
+            </summary>
+            <param name="latitude">latitude value</param>
+            <returns>latitude radius</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.GetZoomLevelForGeoPoint(System.Double,System.Double,System.Double)">
+            <summary>
+            To calculate zoom level for latitude and longitude
+            </summary>
+            <param name="radius">latitude radius</param>
+            <param name="mapSize">control size</param>
+            <param name="tileSize">tile size</param>
+            <returns>zoom level</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.DistanceToLatitudeDegrees(System.Double)">
+            <summary>
+            Convert distance to latitude degree
+            </summary>
+            <param name="distance">distance</param>
+            <returns>Latitude Degree</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.DistanceToLongitudeDegrees(CoreGraphics.CGPoint,System.Double)">
+            <summary>
+            Convert distance to longitude degree
+            </summary>
+            <param name="position">Center</param>
+            <param name="distance">Distance</param>
+            <returns>Longitude Degree</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.ImageryLayer.RadiusToDistanceInMeters">
+            <summary>
+            Convert radius to distance in meters
+            </summary>
+            <returns>distance in meters</returns>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.ZoomLevelChangingEventArgs">
+            <summary>
+            The implementation of ZoomLevelChangingEventArgs
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ZoomLevelChangingEventArgs.previousLevel">
+            <summary>
+            To store previous level
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ZoomLevelChangingEventArgs.currentLevel">
+            <summary>
+            To store the current level
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.ZoomLevelChangingEventArgs.cancel">
+            <summary>
+            To store the cancel value
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ZoomLevelChangingEventArgs.PreviousLevel">
+            <summary>
+            Gets the previous level
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ZoomLevelChangingEventArgs.CurrentLevel">
+            <summary>
+            Gets the current level
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.ZoomLevelChangingEventArgs.Cancel">
+            <summary>
+            Gets or sets a value indicating whether the event is cancel
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.GeoCoordinateChangedEventArgs">
+            <summary>
+            To implement GeoCoordinateChangedEventArgs in imagery layer
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.GeoCoordinateChangedEventArgs.topLeft">
+            <summary>
+            To store top left latitude and longitude.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.GeoCoordinateChangedEventArgs.topRight">
+            <summary>
+            To store the top right latitude and longitude.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.GeoCoordinateChangedEventArgs.bottomLeft">
+            <summary>
+            To store the bottom left latitude and longitude.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.GeoCoordinateChangedEventArgs.bottomRight">
+            <summary>
+            To store the bottom right latitude and longitude.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.GeoCoordinateChangedEventArgs.center">
+            <summary>
+            To store the center latitude and longitude.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.GeoCoordinateChangedEventArgs.TopLeft">
+            <summary>
+            Gets the top left latitude and longitude.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.GeoCoordinateChangedEventArgs.TopRight">
+            <summary>
+            Gets the top right latitude and longitude.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.GeoCoordinateChangedEventArgs.BottomLeft">
+            <summary>
+            Gets the bottom left latitude and longitude.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.GeoCoordinateChangedEventArgs.BottomRight">
+            <summary>
+            Gets the bottom right latitude and longitude.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.GeoCoordinateChangedEventArgs.Center">
+            <summary>
+            Gets the center latitude and longitude.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.LatLngBounds">
+            <summary>
+            Class implementation of north east and south west points to calculate zoom level and center.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.LatLngBounds.southwest">
+            <summary>
+            Gets or sets the southwest corner of the geo bounds.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.LatLngBounds.northeast">
+            <summary>
+            Gets or sets the northeast corner of the geo bounds.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.LatLngBounds.Northeast">
+            <summary>
+            Gets or sets the northeast corner of the geo bounds.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.LatLngBounds.Southwest">
+            <summary>
+            Gets or sets the southwest corner of the geo bounds.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.LatLngBounds.ImageryLayer">
+            <summary>
+            Gets or sets the imagery layer
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.xCount">
+            <summary>
+            Gets or sets the value for xcount
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.yCount">
+            <summary>
+            Gets or sets the value for count
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.uri">
+            <summary>
+            Gets or sets the uri value
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.pinchGesture">
+            <summary>
+            Gets or sets the pinch gesture
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.panGesture">
+            <summary>
+            Gets or sets the pan gesture
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.tapGesture">
+            <summary>
+            Gets or sets the tap gesture
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.zoomPoint">
+            <summary>
+            Gets or sets the zoom point
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.startPoint">
+            <summary>
+            Gets or sets the start value
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.currentPoint">
+            <summary>
+            Gets or sets the current point
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.isPinchActivated">
+            <summary>
+            Gets or sets the bool value indicating whether the pinching is occurred
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.tiles">
+            <summary>
+            Gets or sets the tile collection
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.currentTiles">
+            <summary>
+            Gets or sets the current tile
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.isPanned">
+            <summary>
+            Gets or sets the value indicating whether the layer is panned
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.prevScale">
+            <summary>
+            Gets or sets the previous scale value
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.LatLonPoint">
+            <summary>
+            Gets or sets the latitude and longitude value
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.cumulativeScale">
+            <summary>
+            The cumulative scale.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.imageUri">
+            <summary>
+            Gets or sets the bing map Uri
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.imageUriSubdomains">
+            <summary>
+            Gets or sets the bing map sub domain
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.layer">
+            <summary>
+            Gets or sets the current layer type
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.previousScale">
+            <summary>
+            Getsor sets the previous scale
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.previousTiles">
+            <summary>
+            Gets or sets the previous tiles.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.previousTilesCollection">
+            <summary>
+            Gets or sets the previous tiles collection.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.canClear">
+            <summary>
+            Gets or sets a bool value indicating whether to clear all the tiles
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.tilesCount">
+            <summary>
+            Gets or sets the tile count
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.currentCount">
+            <summary>
+            Gets or sets the current tile count
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.zoomLevelChanging">
+            <summary>
+            To store the value of event argumnet when change the scale.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.scale">
+            <summary>
+            Gets or sets the scale value
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.transformedPoint">
+            <summary>
+            Gets or sets the screen coordinates
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.childViewPoint">
+            <summary>
+            Gets or sets the x and y value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.xValue">
+            <summary>
+            Gets or sets the tilelayer X value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.yValue">
+            <summary>
+            Gets or sets the tilelayer Y value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.center">
+            <summary>
+            Gets or sets the value for center
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.topLeft">
+            <summary>
+            Gets or sets the value for top left
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.topRight">
+            <summary>
+            Gets or sets the value for top right
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.bottomLeft">
+            <summary>
+            Gets or sets the value for bottom left
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.bottomRight">
+            <summary>
+            Gets or sets the value for bottom right
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.isTileDownloaded">
+            <summary>
+            Gets or sets a value indicating whether the tile is downloaded.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.isSecondLevelTilesDownloaded">
+            <summary>
+            Gets or sets a value indicating whether the second level tiles or loaded or not. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.centerPoint">
+            <summary>
+            Gets or sets a value indicating the current center point when zooming. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.previousPinchScale">
+            <summary>
+            Gets or sets a pinch gesture scale value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.previousMarker">
+            <summary>
+            Gets or sets a value for previous marker
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.iOS.TileLayer.isMarkerAtTop">
+            <summary>
+            This property used to restrict the marker selected event unnecessary calls, when CanBringToTop is enabled.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.#ctor(CoreGraphics.CGRect)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.iOS.TileLayer"/> class.
+            </summary>
+            <param name="frame">Frame.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.HandleTouch(UIKit.UITapGestureRecognizer)">
+            <summary>
+            Handles the touch.
+            </summary>
+            <param name="tapGestureRecognizer">Tap gesture recognizer.</param>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TileLayer.ControlSize">
+            <summary>
+            Gets or sets the value for control size
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TileLayer.Scale">
+            <summary>
+            Gets or sets the value for scale
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TileLayer.ImageryLayer">
+            <summary>
+            Gets or sets theimageryn layer
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TileLayer.ElementView">
+            <summary>
+            Gets or sets the marker view
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TileLayer.Map">
+            <summary>
+            Gets or sets the map
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TileLayer.WebClients">
+            <summary>
+            Gets or sets the webclient
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TileLayer.X">
+            <summary>
+            Gets or sets the X value
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TileLayer.Y">
+            <summary>
+            Gets or sets the Y value
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TileLayer.IsKeyValidated">
+            <summary>
+            Gets or sets a value indicating whether key is validated or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TileLayer.IsSubShapePan">
+            <summary>
+            Gets or sets a value indicating whether the sub shape is panned.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TileLayer.PinchScale">
+            <summary>
+            Gets or sets the pinch scale.
+            </summary>
+            <value>The pinch scale.</value>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.TileLayer.SubShapeTransform">
+            <summary>
+            Gets or sets the sub shape layer transform point.
+            </summary>
+            <value>The sub shape layer transform point.</value>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.TouchesBegan(Foundation.NSSet,UIKit.UIEvent)">
+            <summary>
+            Method fired when the touch begans
+            </summary>
+            <param name="touches">NSSet</param>
+            <param name="evt">UIEvent</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.LayoutSubviews">
+            <summary>
+            Layouts the subviews.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.RenderTile(CoreGraphics.CGPoint)">
+            <summary>
+            Method used to load the tile at loading time
+            </summary>
+            <param name="centerPosition">latitude and longitude</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.LoadBing">
+            <summary>
+            Method used to load bing
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.RefreshMarkers">
+            <summary>
+            Method used for refreshing the marker
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.UpdateMarkerPositon(System.Collections.IList,System.Boolean,Syncfusion.SfMaps.iOS.SFShapeFileLayer)">
+            <summary>
+            Updates the marker position.
+            </summary>
+            <param name="newItems">Newly added markers.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.GenerateTiles">
+            <summary>
+            Method used for calculating the tiles in view
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.CalculateTileInView(System.Int32)">
+            <summary>
+            To calculate the tiles in view with new scale value
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.CalculateZoomLevelTiles(System.Int32,System.Double,System.Double)">
+            <summary>
+            This method is used for generating the tiles for the zoom level
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.TilelatLongtoPoint(System.Double,System.Double)">
+            <summary>
+            Method is used for converting the latitude and longitude value to pixel value
+            </summary>
+            <param name="lat">latitude</param>
+            <param name="lng">longitude</param>
+            <returns>pixel</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.DisposeTiles">
+            <summary>
+            Method used for disposing the sub views
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.DeleteTilesFromCache">
+            <summary>
+            To delete the images saved in application memory
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.ClearWebClients">
+            <summary>
+            To clear the web clients
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.RemovePreviousLevelTiles(System.Collections.Generic.List{Syncfusion.SfMaps.iOS.Tile})">
+            <summary>
+            This is method is used for removing the unwanted child added in the current view
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.AddGesture">
+            <summary>
+            Method used for adding gesture
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.ResetTile">
+            <summary>
+            Resets the tile.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.ResetSubShapeLayer">
+            <summary>
+            Resets the sub shape layer.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.TapGesture_ShouldReceiveTouch(UIKit.UIGestureRecognizer,UIKit.UITouch)">
+            <summary>
+            Method called when the panning begins
+            </summary>
+            <param name="recognizer">TapGestureRecgonizer</param>
+            <param name="touch">UITouch</param>
+            <returns>bool value</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.SetSelectedEventArgs(Syncfusion.SfMaps.iOS.SFMapMarker)">
+            <summary>
+            This method is used for creating the marker selected event args
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.SetPreviousMarker(Syncfusion.SfMaps.iOS.SFMapMarker,Syncfusion.SfMaps.iOS.MarkerSelectedEventArgs)">
+            <summary>
+            Sets the previous marker.
+            </summary>
+            <param name="marker">Marker.</param>
+            <param name="args">Marker selected event args.</param>
+            <returns>Map Marker.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.PanWithGestureReeognizer(UIKit.UIPanGestureRecognizer)">
+            <summary>
+            Method called when the panning occurs
+            </summary>
+            <param name="panGestureRecognizer">panGestureRecgonizer</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.ValidateNewXDistance(System.Double,System.Double)">
+            <summary>
+            This method returns bool value whether to pan map on new x direction
+            </summary>
+            <param name="x">new x direction</param>
+            <param name="size">current size</param>
+            <returns>false</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.ValidateNewYDistance(System.Double,System.Double)">
+            <summary>
+             This method returns bool value whether to pan map on new y direction
+            </summary>
+            <param name="y">new x direction</param>
+            <param name="size">current size</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.PinchWithGestureRecognizer(UIKit.UIPinchGestureRecognizer)">
+            <summary>
+            Method called when the pinching occurs
+            </summary>
+            <param name="pinchGestureRecognizer">pinchGestureRecgonizer</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.CalculateZoomLevel(UIKit.UIPinchGestureRecognizer)">
+            <summary>
+            Calculates the zoom level.
+            </summary>
+            <param name="pinchGestureRecognizer">Pinch gesture recognizer.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.CalculateNextLevel(UIKit.UIPinchGestureRecognizer)">
+            <summary>
+            Method is used for calcilating the next level tile based on zoom position
+            </summary>
+            <param name="pinchGestureRecognizer">pinchGestureRecgonizer</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.CalculateGeoCoordinates(Syncfusion.SfMaps.iOS.GeoCoordinateChangedEventArgs)">
+            <summary>
+            This method is used when panning and zooming is enabled to get the coordinates.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.CalculateTileBounds">
+            <summary>
+            Calculates the tile bounds.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.GetGeoCoordinatesChangedArguments(System.Double,System.Double)">
+            <summary>
+            This method is used when panning and zooming is enabled to get the latitude and longitude.
+            </summary>
+            <param name="pointX">to get longitude</param>
+            <param name="pointY">to get latitude</param>
+            <returns>Returns the latitude and longitude</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.SetNextTiles(UIKit.UIPinchGestureRecognizer)">
+            <summary>
+            This method is used for calculating the next level tiles
+            </summary>
+            <param name="pinchGestureRecognizer">pinch gesture recgonizer</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.RemovePreviousLevelTiles">
+            <summary>
+            This method is used for removing the unwanted tile added in the view
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.GenerateFolderName(System.String)">
+            <summary>
+            This method is used for generating the name of the folder.
+            </summary>
+            <returns>The folder name.</returns>
+            <param name="customUri">Custom URI.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.TileXYToQuadKey(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Method used calculation level for Bing layer
+            </summary>
+            <param name="zoomLevel">zoom level</param>
+            <param name="tileX">x-coordinates</param>
+            <param name="tileY">y-coordinates</param>
+            <returns>quad key</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.CalculateExistingTile">
+            <summary>
+            Method used to find the existing tile available in the view for panning
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.ValidateBingKeyAndUri">
+            <summary>
+            Method used for validating the bing key
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.DownloadTile(Syncfusion.SfMaps.iOS.Tile)">
+            <summary>
+            Method used for downloading the tile from uri
+            </summary>
+            <param name="i">X Coordinate</param>
+            <param name="j">Y Coordinate</param>
+            <param name="tile">Tile</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.AddWebClientHeaderCollection(System.Net.WebClient)">
+            <summary>
+             This method is used to add collection of header value pairs associated with the request.
+            </summary>
+            <param name="webClient">It contain web client values</param>
+            <returns>it return web client</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.CheckImageInCache(Syncfusion.SfMaps.iOS.Tile,System.Uri,System.Net.WebClient)">
+            <summary>
+            Checks the image in cache.
+            </summary>
+            <param name="tile">Tile.</param>
+            <param name="currentUri">Current URI.</param>
+            <param name="webClient">Web client.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.CreateFolder(System.String)">
+            <summary>
+            Creates the folder.
+            </summary>
+            <returns>The folder.</returns>
+            <param name="path">Path.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.CreateImageFile(System.String,System.String,Syncfusion.SfMaps.iOS.Tile,System.Uri,System.Net.WebClient)">
+            <summary>
+            Creates the image file.
+            </summary>
+            <param name="folder">Folder.</param>
+            <param name="tile">Tile.</param>
+            <param name="currentUri">Current URI.</param>
+            <param name="webClient">Web client.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.UriAsImage(System.Uri,Syncfusion.SfMaps.iOS.Tile,System.Net.WebClient)">
+            <summary>
+            To convert the uri as image
+            </summary>
+            <param name="currentUri">image uri</param>
+            <param name="tile">tile</param>
+            <param name="webClient">webclient</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.DisposeWebClient(System.Net.WebClient)">
+            <summary>
+            Disposes the web client.
+            </summary>
+            <param name="webClient">Web client.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.SetImageView(UIKit.UIImage,Syncfusion.SfMaps.iOS.Tile)">
+            <summary>
+            Method used for placing the tiles
+            </summary>
+            <param name="imageBytes"></param>
+            <param name="i"></param>
+            <param name="j"></param>
+            <param name="tile"></param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.LatLonToPoint(System.Double,System.Double,System.Int32)">
+            <summary>
+            Method used for calculating the current latitude and longitude
+            </summary>
+            <param name="latitude">latitude</param>
+            <param name="longitude">longitude</param>
+            <param name="zoomLevel">scale value</param>
+            <returns>pixel value</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.ConvertTileLatLongtoPoint(System.Double,System.Double)">
+            <summary>
+            Method used for converting the latitude and longitude value to pixel value
+            </summary>
+            <param name="lat">latitude</param>
+            <param name="lng">longitude</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.PointToLatLon(System.Double,System.Double,System.Int32)">
+            <summary>
+            Method used for converting the pixel value to latitude and longitude balue
+            </summary>
+            <param name="pixX">x-value</param>
+            <param name="pixY">y-value</param>
+            <param name="zoomLevel">zoom level</param>
+            <returns>latitude and longitude</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.MinMax(System.Double,System.Double,System.Double)">
+            <summary>
+            Method used for calculating the minimum value
+            </summary>
+            <param name="n">scale</param>
+            <param name="minValue">minimum value</param>
+            <param name="maxValue">maximum value</param>
+            <returns>minimum</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.UpdateDownloadedTile(Syncfusion.SfMaps.iOS.Tile)">
+            <summary>
+            Updates the downloaded tile.
+            </summary>
+            <param name="tile">Tile.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.TilesForZooming">
+            <summary>
+            Tileses for zooming.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.GenerateZoomLevelTwoTiles(System.Int32)">
+            <summary>
+            Generate tiles for zoom level two.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.CalculatePreviousTile">
+            <summary>
+            Calculates the previous tile.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.AddAdditionalLayer">
+            <summary>
+            Adds the additional layer.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.CheckDownloadedLevel">
+            <summary>
+            Checks the downloaded level.
+            </summary>
+            <returns>The downloaded level.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.CalculatePreviousTilesPosition(System.Int32)">
+            <summary>
+            Calculates the previous tiles position.
+            </summary>
+            <param name="level">Level.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.CalculateTilePosition(System.Collections.Generic.List{Syncfusion.SfMaps.iOS.Tile})">
+            <summary>
+            Calculates the tile position.
+            </summary>
+            <param name="tilesList">Tiles list.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.AddTiles(System.Collections.Generic.List{Syncfusion.SfMaps.iOS.Tile})">
+            <summary>
+            This method is used to add the child into the view
+            </summary>
+            <param name="previousTile">Previous tile.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.RemoveTiles">
+            <summary>
+            This method is used to remov the previous level tiles
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.TileLayer.RemoveView(System.Collections.Generic.List{UIKit.UIView},System.Collections.Generic.List{Syncfusion.SfMaps.iOS.Tile})">
+            <summary>
+            This method is used to remove the view from super view
+            </summary>
+            <param name="view">View.</param>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.Tile">
+            <summary>
+            Class implementation of Tile
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.Tile.X">
+            <summary>
+            Gets or sets the value for X
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.Tile.Y">
+            <summary>
+            Gets or sets the value for Y
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.Tile.Scale">
+            <summary>
+            Gets or sets the value for scale
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.Tile.ImageView">
+            <summary>
+            Gets or sets the value for image view
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.Tile.ImageBounds">
+            <summary>
+            Gets or sets the value for image bounds
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.Tile.Bounds">
+            <summary>
+            Gets or sets the current image bounds
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.iOS.Tile.IsDownloaded">
+            <summary>
+            Gets or sets a value indicating whether the tile is downloaded
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.iOS.SFMapUtils">
+            <summary>
+            Class implementation of SFMapUtils
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapUtils.CreateDesignTimeMap(Syncfusion.SfMaps.iOS.SFMap)">
+            <summary>
+            Method used to design the maps.
+            </summary>
+            <param name="map">To add the map</param>
+            <returns>The map</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.iOS.SFMapUtils.ConvertStringToDouble(System.String)">
+            <summary>
+            Converts the string to double value based on the current culture.
+            </summary>
+            <param name="stringValue">String to be converted to double.</param>
+            <returns>Double value of the string.</returns>
+        </member>
+    </members>
+</doc>

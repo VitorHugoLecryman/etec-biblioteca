@@ -1,0 +1,628 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfMaps.XForms.UWP</name>
+    </assembly>
+    <members>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.BubbleMarkerMapping.Dispose">
+            <summary>
+            Called when the control is disposed
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.UWP.ImageryLayerMapping">
+            <summary>
+            Class implementation of ImageryLayerMapping
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.UWP.ImageryLayerMapping.dataTemplate">
+            <summary>
+            Gets the value of marker data template
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.UWP.ImageryLayerMapping.markerSettingsMapping">
+            <summary>
+            Gets or sets the value for marker setting mappings
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ImageryLayerMapping.#ctor">
+            <summary>
+            Initializes a new instance for <see cref="T:Syncfusion.SfMaps.XForms.UWP.ImageryLayerMapping"/>
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ImageryLayerMapping.GetNativeLayer(Syncfusion.SfMaps.XForms.ImageryLayer,Syncfusion.UI.Xaml.Maps.SfMap)">
+            <summary>
+            This method is used to return the native imagery layer
+            </summary>
+            <param name="level">form layer</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ImageryLayerMapping.NativeImagerLayer_ZoomLevelChanging(System.Object,Syncfusion.UI.Xaml.Maps.ZoomLevelChangingEventArgs)">
+            <summary>
+            To store the event properties to XForms.
+            </summary>
+            <param name = "sender" > imagery layer</param>
+            <param name = "e" > ZoomLevelChanging event</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ImageryLayerMapping.NativeImagerLayer_GeoCoordinateChanged(System.Object,Syncfusion.UI.Xaml.Maps.GeoCoordinateChangedEventArgs)">
+            <summary>
+            To store the event properties to XForms.
+            </summary>
+            <param name = "sender" > imagery layer</param>
+            <param name = "e" > GeoCoordinateChanged event</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ImageryLayerMapping.SelectedMarkerView(System.Object)">
+            <summary>
+            This method is used to set the native template for selected marker 
+            </summary>
+            <param name="data">data context for template</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ImageryLayerMapping.GetView(System.Object)">
+            <summary>
+            This method is used to set the native template for the markers
+            </summary>
+            <param name="data">data context</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ImageryLayerMapping.GetDataTemplate(System.Text.StringBuilder)">
+            <summary>
+            This method is used to set the default template for marker
+            </summary>
+            <param name="stringBuilder">string builder</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ImageryLayerMapping.SelectedViewTemplate(System.Text.StringBuilder)">
+            <summary>
+            This method is used to set the native template for selected marker
+            </summary>
+            <param name="stringBuilder">string builder</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ImageryLayerMapping.NativeLayer_MarkerSelected(System.Object,Syncfusion.UI.Xaml.Maps.MarkerSelectedEventArgs)">
+            <summary>
+            Called when the marker is selected
+            </summary>
+            <param name="sender">map layer</param>
+            <param name="e">marker selected event args</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ImageryLayerMapping.OnImageryLayerPropertiesChanged(System.String,Syncfusion.SfMaps.XForms.ImageryLayer,Syncfusion.UI.Xaml.Maps.ImageryLayer)">
+            <summary>
+            Called when the imagery layer properties changed
+            </summary>
+            <param name="propertyName">layer property name</param>
+            <param name="level">form imagery layer</param>
+            <param name="nativeLayer">native imagery layer</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ImageryLayerMapping.LatLngBound_propertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Called when the properties gets changed
+            </summary>
+            <param name="sender">The sender</param>
+            <param name="e">The property changed event arguments</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ImageryLayerMapping.Dispose">
+            <summary>
+            Called when the control is disposed
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.UWP.MarkerViewConverter">
+            <summary>
+            Class implementation of MarkerViewConverter
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.MapDependencyServiceMapping.DeleteTilesFromCache(System.Object)">
+            <summary>
+            To delete the tiles from cache
+            </summary>
+            <param name = "obj" > native layer</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.SfMaps.XForms.UWP.MapDependencyServiceMapping.GetLatLonFromPoint(Xamarin.Forms.Point,System.Object)" -->
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.SfMaps.XForms.UWP.MapDependencyServiceMapping.GeopointToViewPoint(System.Double,System.Double,System.Object)" -->
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.SfMaps.XForms.UWP.MapDependencyServiceMapping.ReadAsJsonStream(System.IO.Stream,System.Object)" -->
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.SfMaps.XForms.UWP.MapDependencyServiceMapping.ReadAsStream(System.IO.Stream,System.Object)" -->
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.MapDependencyServiceMapping.ReadAsStream(System.IO.Stream,System.IO.Stream,System.Object)">
+            <summary>
+            To read the stream contains shape file stream and db file stream
+            </summary>
+            <param name = "shapeStream" > Shape file stream</param>
+            <param name = "dbStream" > db file stream</param>
+            <param name = "obj" > native shape file layer</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.MapDependencyServiceMapping.SubscribeZoomLevelChanging(Syncfusion.SfMaps.XForms.ImageryLayer,System.Object)">
+            <summary>
+            To hook ZoomLevelChanging event.
+            </summary>
+            <param name="layer">ImageryLayer</param>
+            <param name="nativeObject">native object</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.MapDependencyServiceMapping.SubscribeGeoCoordinateChanged(Syncfusion.SfMaps.XForms.ImageryLayer,System.Object)">
+            <summary>
+            To hook GeoCoordinateChanged event.
+            </summary>
+            <param name="layer">ImageryLayer</param>
+            <param name="nativeObject">native object</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.MapDependencyServiceMapping.UnsubscribeZoomLevelChanging(Syncfusion.SfMaps.XForms.ImageryLayer,System.Object)">
+            <summary>
+            To unhook ZoomLevelChanging event.
+            </summary>
+            <param name="layer">ImageryLayer</param>
+            <param name="nativeObject">native object</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.MapDependencyServiceMapping.UnsubscribeGeoCoordinateChanged(Syncfusion.SfMaps.XForms.ImageryLayer,System.Object)">
+            <summary>
+            To unhook GeoCoordinateChanged event.
+            </summary>
+            <param name="layer">ImageryLayer</param>
+            <param name="nativeObject">native object</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.MapDependencyServiceMapping.NativeImagerLayer_ZoomLevelChanging(System.Object,Syncfusion.UI.Xaml.Maps.ZoomLevelChangingEventArgs)">
+            <summary>
+            To store the event properties to XForms.
+            </summary>
+            <param name = "sender" > imagery layer</param>
+            <param name = "e" > ZoomLevelChanging event</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.MapDependencyServiceMapping.NativeImagerLayer_GeoCoordinateChanged(System.Object,Syncfusion.UI.Xaml.Maps.GeoCoordinateChangedEventArgs)">
+            <summary>
+            To store the event properties to XForms.
+            </summary>
+            <param name = "sender" > imagery layer</param>
+            <param name = "e" > GeoCoordinateChanged event</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.MapDependencyServiceMapping.SubscribeTooltipOpening(Syncfusion.SfMaps.XForms.SfMaps,System.Object)">
+            <summary>
+            To hook TooltipOpening event.
+            </summary>
+            <param name="maps">SfMaps</param>
+            <param name="nativeObject">native object</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.MapDependencyServiceMapping.UnsubscribeTooltipOpening(Syncfusion.SfMaps.XForms.SfMaps,System.Object)">
+            <summary>
+            To unhook TooltipOpening event.
+            </summary>
+            <param name="maps">SfMaps</param>
+            <param name="nativeObject">native object</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.SfMaps.XForms.UWP.MapDependencyServiceMapping.Native_TooltipOpening(System.Object,Syncfusion.UI.Xaml.Maps.TooltipOpeningEventArgs)" -->
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.MapDependencyServiceMapping.GetEventHandler(System.Type,System.String,System.Object)">
+            <summary>
+            The Event handler
+            </summary>
+            <param name = "type" > Native imagery LAyer</param>
+            <param name = "name" > Event type</param>
+            <param name = "obj" > native object</param>
+            <returns> to retuen the event handler</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.MapDependencyServiceMapping.SubscribeShapeSelectionChanged(Syncfusion.SfMaps.XForms.ShapeFileLayer,System.Object)">
+            <summary>
+            To hook ShapeSelection event.
+            </summary>
+            <param name="layer">ImageryLayer</param>
+            <param name="nativeObject">native object</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.MapDependencyServiceMapping.NativeShapeLayer_ShapeSelected(System.Object,Syncfusion.UI.Xaml.Maps.SelectionEventArgs)">
+            <summary>
+            Hooks the shape selection changed event when a shape is selected.
+            </summary>
+            <param name="sender">native shape file layer</param>
+            <param name="args">selection event arguments</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.MapDependencyServiceMapping.UnsubscribeShapeSelectionChanged(Syncfusion.SfMaps.XForms.ShapeFileLayer,System.Object)">
+            <summary>
+            To unhook ShapeSelection event.
+            </summary>
+            <param name="layer">ImageryLayer</param>
+            <param name="nativeObject">native object</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.MapDependencyServiceMapping.NativeShapeLayer_ShapesUnSelected(System.Object,Syncfusion.UI.Xaml.Maps.SelectionEventArgs)">
+            <summary>
+            Hooks the shape selection changed event when a shape is unselected.
+            </summary>
+            <param name="sender">native shape file layer</param>
+            <param name="args">selection event arguments</param>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.UWP.LatLngBoundsMapping">
+            <summary>
+            Class implementation LatLngBoundsMapping
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.LatLngBoundsMapping.GetBounds(Syncfusion.SfMaps.XForms.LatLngBounds)">
+            <summary>
+            It converts the XForms LatLngBounds to Native
+            </summary>
+            <param name="formBounds">XForms LatLngBounds</param>
+            <returns>Native LatLngBounds</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.LatLngBoundsMapping.OnBoundsPropertiesChanged(System.String,Syncfusion.SfMaps.XForms.LatLngBounds,Syncfusion.UI.Xaml.Maps.LatLngBounds)">
+            <summary>
+            Called when the LatLngBounds properties gets changed
+            </summary>
+            <param name="propertyName">property name</param>
+            <param name="formBounds">XForms LatLngBounds</param>
+            <param name="nativeBounds">Native LatLngBounds</param>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.UWP.MapItemSettingMapping">
+            <summary>
+            Implement MapItemSetingMapping
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.MapMarkerMapping.ConvertStringToDouble(System.String)">
+            <summary>
+            Convert string value to double based on the device culture.
+            </summary>
+            <param name="stringValue"> contains the converting string.</param>
+            <returns> returns the converted double value.</returns>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.UWP.SfMapsMapping">
+            <summary>
+            Sf busy indicator mapping.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.UWP.SfMapsMapping.nativeMap">
+            <summary>
+            Gets or sets the value for native map
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.UWP.SfMapsMapping.formsMap">
+            <summary>
+            Gets or sets the value for forms map
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.UWP.SfMapsMapping.ShapeLayerMapping">
+            <summary>
+            Gets or sets value for Shape file layer mapping
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.UWP.SfMapsMapping.ImageryLayerMapping">
+            <summary>
+            Gets or sets the value for imagery layer mapping
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.SfMapsMapping.OnMapsPropertiesChanged(System.String,Syncfusion.SfMaps.XForms.SfMaps,Syncfusion.UI.Xaml.Maps.SfMap)">
+            <summary>
+            Raises the busy indicator properties changed event.
+            </summary>
+            <param name="propertyName">Property name.</param>
+            <param name="formsMaps">Forms busy indicator.</param>
+            <param name="nativeMaps">Native busy indicator.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.SfMapsMapping.SetNativeLegendProperties(Syncfusion.SfMaps.XForms.ShapeFileLayer)">
+            <summary>
+            To set the native legend properties based on the base layer
+            </summary>
+            <param name="layer"></param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.SfMapsMapping.Dispose">
+            <summary>
+            Called when the control is disposed
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.UWP.ShapeFileLayerMapping.dataTemplate">
+            <summary>
+            Gets the value of marker data template
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.UWP.ShapeFileLayerMapping.markerSettingsMapping">
+            <summary>
+            Gets or sets the value for marker setting mappings
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ShapeFileLayerMapping.OnShapePointsCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            To refresh the maps when adding or removing or reset the Points.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ShapeFileLayerMapping.SubLayers_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            This method is called when any of the properties changed in sublayer.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ShapeFileLayerMapping.MarkerSettings_PropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            This method is called when any of the properties changed in markers.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ShapeFileLayerMapping.NativeLayer_MarkerSelected(System.Object,Syncfusion.UI.Xaml.Maps.MarkerSelectedEventArgs)">
+            <summary>
+            Called when the marker is selected
+            </summary>
+            <param name="sender">map layer</param>
+            <param name="e">marker selected event args</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ShapeFileLayerMapping.SelectedViewTemplate(System.Text.StringBuilder)">
+            <summary>
+            To load the template of selected marker
+            </summary>
+            <param name="stringBuilder">template</param>
+            <returns>template</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ShapeFileLayerMapping.SelectedMarkerView(System.Object)">
+            <summary>
+            This method is used to set the native template for selected marker 
+            </summary>
+            <param name="data">data context for template</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ShapeFileLayerMapping.GetView(System.Object)">
+            <summary>
+            This method is used to set the native template for selected marker 
+            </summary>
+            <param name="data">data context for template</param>
+            <returns>Return view</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ShapeFileLayerMapping.Dispose">
+            <summary>
+            Called when control disposed
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ShapeSettingMapping.Dispose">
+            <summary>
+            Called when the control is disposed
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.UWP.TooltipSettingsMapping">
+            <summary>
+            The Class implementation of Tooltip setting mapping
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.TooltipSettingsMapping.GetNativeTooltipSetting(Syncfusion.SfMaps.XForms.TooltipSetting,System.String)">
+            <summary>
+            To store the tooltip settings
+            </summary>
+            <summary>
+            To get the native tooltip settings.
+            </summary>
+            <param name="tooltipSetting">The tooltip setting</param>
+            <param name="type">The tooltip type</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.TooltipSettingsMapping.Tooltip_PropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            The tooltip property changed.
+            </summary>
+            <param name="sender">The forms tooltip settings</param>
+            <param name="e">The event</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.TooltipSettingsMapping.OnTooltipSettingPropertiesChanged(System.String,Syncfusion.SfMaps.XForms.TooltipSetting,Syncfusion.UI.Xaml.Maps.TooltipSetting,System.Text.StringBuilder)">
+            <summary>
+            The tooltip settings property changed.
+            </summary>
+            <param name="propertyName">The property name</param>
+            <param name="formTooltip">The forms tooltip settings</param>
+            <param name="nativeTooltip">The native tooltip settings</param>
+            <param name="stringBuilder">the string builder</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.TooltipSettingsMapping.GetDataTemplate(System.Text.StringBuilder)">
+            <summary>
+            To get DataTemplate
+            </summary>
+            <param name="stringBuilder">The string builder</param>
+            <returns>Returns the data template</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.TooltipSettingsMapping.GetView(System.Object,Syncfusion.SfMaps.XForms.TooltipSetting)">
+            <summary>
+            To get the tooltip view
+            </summary>
+            <param name="settings">The tooltip settings</param>
+            <param name="tooltipType">The tooltip type</param>
+            <returns>Returns the tooltip view</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.TooltipSettingsMapping.ConvertToNative(Xamarin.Forms.View,Xamarin.Forms.Element)">
+            <summary>
+            The Native convertion
+            </summary>
+            <param name="source">The source</param>
+            <param name="valid">The valid</param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.UWP.TooltipViewConverter">
+            <summary>
+            Converts the forms view to native tooltip view
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.TooltipViewConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            The tooltip convert 
+            </summary>
+            <param name="value">The data</param>
+            <param name="targetType">The target type</param>
+            <param name="parameter">The parameter</param>
+            <param name="language">The language</param>
+            <returns>Returns the convertion</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.TooltipViewConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            The convert back
+            </summary>
+            <param name="value">The value</param>
+            <param name="targetType">The target type</param>
+            <param name="parameter">The parameter</param>
+            <param name="language">The language</param>
+            <returns></returns>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer._maps">
+            <summary>
+            Hold forms maps object
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer.nativeMaps">
+            <summary>
+            Hold native maps object
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer.sfMapsMapping">
+            <summary>
+            Map mapping instance
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer.panEventArgs">
+            <summary>
+            Gets or sets the panning event arguments.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer.OnElementChanged(Xamarin.Forms.Platform.UWP.ElementChangedEventArgs{Syncfusion.SfMaps.XForms.SfMaps})">
+            <summary>
+            Raises the element changed event.
+            </summary>
+            <param name="e">E.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer.SfMapsRenderer_Tapped(System.Object,Windows.UI.Xaml.Input.TappedRoutedEventArgs)">
+            <summary>
+            Invoked when an tap interaction occurs over the hit test area of the map.
+            </summary>
+            <param name="sender">Instance of <see cref="T:Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer"/>.</param>
+            <param name="e">TappedRoutedEventArgs</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer.SfMapsRenderer_PointerPressed(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Occurs when the pointer initiates the press action on the map.
+            </summary>
+            <param name="sender">Instance of <see cref="T:Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer"/>.</param>
+            <param name="e">PointerRoutedEventArgs</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer.SfMapsRenderer_PointerMoved(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Occurs when a pointer moves while the pointer remains within the hit test area of the map.
+            </summary>
+            <param name="sender">Instance of <see cref="T:Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer"/>.</param>
+            <param name="e">PointerRoutedEventArgs</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer.SfMapsRenderer_PointerReleased(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Occurs when a pointer that previously initiated a press action is released from the map.
+            </summary>
+            <param name="sender">Instance of <see cref="T:Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer"/>.</param>
+            <param name="e">PointerRoutedEventArgs</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer.OnElementPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Raises the element property changed event.
+            </summary>
+            <param name="sender">Sender.</param>
+            <param name="e">E.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer.SetAutomationId(System.String)">
+            <summary>
+            Sets the automation ID.
+            </summary>
+            <param name="id">Automation ID</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer.OnCreateAutomationPeer">
+            <summary>
+            Provide automation peer for the control
+            </summary>
+            <returns>The maps automation peer.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer.GetPropertiesChanged(System.Type,System.Object)">
+            <summary>
+            Gets the properties changed.
+            </summary>
+            <returns>The properties changed.</returns>
+            <param name="type">Type.</param>
+            <param name="obj">Object.</param>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.UWP.ImageryLayerExt.ImageryLayer">
+            <summary>
+            Gets or sets the value for imagery layer
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.ImageryLayerExt.GetUri(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            This method is used to return the custom uri
+            </summary>
+            <param name="X">The x value</param>
+            <param name="Y">The y value</param>
+            <param name="Scale">The scale</param>
+            <returns>The custom Uri</returns>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.UWP.SfMapsAutomationPeer">
+            <summary>
+            Maps Automation Peer Class 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.SfMapsAutomationPeer.#ctor(Windows.UI.Xaml.FrameworkElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.XForms.UWP.SfMapsAutomationPeer"/> class.
+            </summary>
+            <param name="owner">maps control</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.SfMapsAutomationPeer.GetAutomationControlTypeCore">
+            <summary>
+            Describe the control type
+            </summary>
+            <returns>The control type.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.SfMapsAutomationPeer.GetClassNameCore">
+            <summary>
+            Describe the class name.
+            </summary>
+            <returns>The Class Name.</returns>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.UWP.Syncfusion_SfMaps_XForms_UWP_XamlTypeInfo.XamlMetaDataProvider">
+            <summary>
+            Main class for providing metadata for the app or library
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.Syncfusion_SfMaps_XForms_UWP_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)">
+            <summary>
+            GetXamlType(Type)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.Syncfusion_SfMaps_XForms_UWP_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)">
+            <summary>
+            GetXamlType(String)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.UWP.Syncfusion_SfMaps_XForms_UWP_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions">
+            <summary>
+            GetXmlnsDefinitions()
+            </summary>
+        </member>
+        <member name="T:MarkerSettingsMapping">
+            <summary>
+            Represents the marker settings mapping class
+            </summary>
+        </member>
+        <member name="F:MarkerSettingsMapping.formsSettings">
+            <summary>
+            Gets or sets the value for forms marker settings
+            </summary>
+        </member>
+        <member name="F:MarkerSettingsMapping.nativeSettings">
+            <summary>
+            Gets or sets the value for native marker settings
+            </summary>
+        </member>
+        <member name="F:MarkerSettingsMapping.nativeLayer">
+            <summary>
+            Gets or sets the value for native map layer
+            </summary>
+        </member>
+        <member name="F:MarkerSettingsMapping.formsLayer">
+            <summary>
+            Gets or sets the value for forms map layer
+            </summary>
+        </member>
+        <member name="M:MarkerSettingsMapping.GetNativeSettings(Syncfusion.SfMaps.XForms.MapMarkerSetting,Syncfusion.UI.Xaml.Maps.MapLayer,Syncfusion.SfMaps.XForms.MapLayer)">
+            <summary>
+            To get the native marker settings
+            </summary>
+            <param name="markerSettings">The marker setting</param>
+            <param name="nativeMapLayer">The native map layer</param>
+            <param name="formsMapLayer">The forms map layer</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarkerSettingsMapping.OnMarkerSettingsPropertiesChanged(System.String)">
+            <summary>
+            Called when the marker settings property changed
+            </summary>
+            <param name="propertyName">property name</param>
+        </member>
+    </members>
+</doc>

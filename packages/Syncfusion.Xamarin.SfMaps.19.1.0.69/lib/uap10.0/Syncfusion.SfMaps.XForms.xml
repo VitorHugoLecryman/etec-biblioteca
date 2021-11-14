@@ -1,0 +1,2701 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfMaps.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfMaps.XForms.DistanceType">
+            <summary>
+            Represents the radius distance.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.DistanceType.Meter">
+            <summary>
+            Distance in meters
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.DistanceType.KiloMeter">
+            <summary>
+            Distance in kilometers
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.DistanceType.Mile">
+            <summary>
+            Distance in miles
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.Position">
+            <summary>
+            Defines the position struct.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.Position.#ctor(System.Double,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.XForms.Position"/> struct.
+            </summary>
+            <param name="latitude">latitude value.</param>
+            <param name="longitude">longitude value.</param>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.Position.Latitude">
+            <summary>
+            Gets or sets the latitude of map position in decimal degrees.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.Position.Longitude">
+            <summary>
+            Gets or sets the longitude of map position in decimal degrees.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.Position.op_Equality(Syncfusion.SfMaps.XForms.Position,Syncfusion.SfMaps.XForms.Position)">
+            <summary>
+            Checks the position values.
+            </summary>
+            <param name="x">X Position.</param>
+            <param name="y">Y Position.</param>
+            <returns>return true/false.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.Position.op_Inequality(Syncfusion.SfMaps.XForms.Position,Syncfusion.SfMaps.XForms.Position)">
+            <summary>
+            Checks the position values.
+            </summary>
+            <param name="x">X Position.</param>
+            <param name="y">Y Position.</param>
+            <returns>return true/false.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.Position.Equals(System.Object)">
+            <summary>
+            Checks the object data type is to equal.
+            </summary>
+            <param name="obj">object value.</param>
+            <returns>return true/false.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.Position.GetHashCode">
+            <summary>
+            It override to get hash code.
+            </summary>
+            <returns>returns hash code.</returns>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.ImageryLayer">
+            <summary>
+            Represents the imagerylayer. To render this, create an instance of the <see cref="T:Syncfusion.SfMaps.XForms.ImageryLayer"/> class, and set required properties.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ImageryLayer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.XForms.ImageryLayer" /> class to render the imagery layer of the maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ImageryLayer.LatLngBoundsProperty">
+            <summary>
+            Gets or sets the geo bounds based on southwest and northeast corner goe points to calculate auto zoom level.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ImageryLayer.LatLngBounds">
+            <summary>
+            Gets or sets the geo bounds based on southwest and northeast corner goe points to calculate auto zoom level.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ImageryLayer.GeoCoordinatesProperty">
+            <summary>
+            Gets or sets the geo coordinate property of the maps. The default value is 0,0. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ImageryLayer.RadiusProperty">
+            <summary>
+            Gets or sets the radius distance from center position to calculate the auto zoom level.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ImageryLayer.Radius">
+            <summary>
+            Gets or sets the radius distance from center position to calculate the auto zoom level.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ImageryLayer.DistanceTypeProperty">
+            <summary>
+            Gets or sets the radius distance type in meters or kilometers or miles to calculate the auto zoom level.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ImageryLayer.DistanceType">
+            <summary>
+            Gets or sets the radius distance type in meters or kilometers or miles to calculate the auto zoom level.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ImageryLayer.GeoCoordinates">
+            <summary>
+            Gets or sets the geo coordinate property. The default value is 0,0. It gives the coordinates value of the center.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ImageryLayer.BingMapStyleProperty">
+            <summary>
+            Gets or sets a value for the Bing maps style property of the maps. The default bing map style is road. This is bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ImageryLayer.BingMapStyle">
+            <summary>
+            Gets or sets a value for the Bing maps style of the maps. The default value of the Bing maps style is road.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ImageryLayer.BingMapKeyProperty">
+            <summary>
+            Gets or sets a value for the Bing maps key property. This key is used to get the Bing maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ImageryLayer.BingMapKey">
+            <summary>
+            Gets or sets a value for the Bing map key of the maps. The key of the Bing maps is used to get the Bing maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ImageryLayer.LayerTypeProperty">
+            <summary>
+            Gets or sets a value for layer type property. The default value of the layer type is OSM. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ImageryLayer.LayerType">
+            <summary>
+            Gets or sets a value for the layer type property of the maps. The default value of the layer type is OSM.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ImageryLayer.ResetOnDoubleTapProperty">
+            <summary>
+            Gets or sets a value for reset on double tap property. The default value is true. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ImageryLayer.ResetOnDoubleTap">
+            <summary>
+            Gets or sets a value indicating whether to reset on double tap of the maps. The default value is true.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ImageryLayer.CanCacheTilesProperty">
+            <summary>
+             The DependencyProperty of the <see cref="P:Syncfusion.SfMaps.XForms.ImageryLayer.CanCacheTiles"/> property. The default value is true. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ImageryLayer.CanCacheTiles">
+            <summary>
+            Gets or sets a value indicating whether to save the tiles in cache of the maps. The default value is true.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ImageryLayer.nativeObject">
+            <summary>
+            Holds the value for property is changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ImageryLayer.NativeObject">
+            <summary>
+            Gets or sets a value for property is changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ImageryLayer.DeleteTilesFromCache">
+            <summary>
+            To delete the tiles saved in applicaion cache.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ImageryLayer.OnBingMapStyleChanged(Xamarin.Forms.BindableObject,Syncfusion.SfMaps.XForms.BingMapStyle,Syncfusion.SfMaps.XForms.BingMapStyle)">
+            <summary>
+            Called when the bing map style is changed.
+            </summary>
+            <param name="bindable">bindable object.</param>
+            <param name="oldValue">previous bing map style.</param>
+            <param name="newValue">current bing map style.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ImageryLayer.GetPointFromLatitudeLongitude(Xamarin.Forms.Point)">
+            <summary>
+            Convert latitude llongitude to point X and point Y.
+            </summary>
+            <param name="point">To get the latitude and longitude values.</param>
+            <returns>returns the point X and pointY values.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ImageryLayer.GetLatitudeLongitudeFromPoint(Xamarin.Forms.Point)">
+            <summary>
+            Convert point X and point Y to longitude and latitude values.
+            </summary>
+            <param name="point">To get the point X and point Y values.</param>
+            <returns>returns the longitude and latitude values.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ImageryLayer.OnLatLngPropertyChanged(Xamarin.Forms.BindableObject,Syncfusion.SfMaps.XForms.LatLngBounds,Syncfusion.SfMaps.XForms.LatLngBounds)">
+            <summary>
+            Called when the  LatLngProperty changed.
+            </summary>
+            <param name="bindable">bindable object.</param>
+            <param name="oldValue">previous LatLngBounds value.</param>
+            <param name="newValue">current  LatLngBounds value.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ImageryLayer.OnRadiusChanged(Xamarin.Forms.BindableObject,System.Double,System.Double)">
+            <summary>
+            Called when the  DistanceRadius changed.
+            </summary>
+            <param name="bindable">bindable object.</param>
+            <param name="oldValue">previous DistanceRadius value.</param>
+            <param name="newValue">current  DistanceRadius value.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ImageryLayer.OnDistanceTypeChanged(Xamarin.Forms.BindableObject,Syncfusion.SfMaps.XForms.DistanceType,Syncfusion.SfMaps.XForms.DistanceType)">
+            <summary>
+            Called when the  DistanceType changed.
+            </summary>
+            <param name="bindable">bindable object.</param>
+            <param name="oldValue">previous DistanceType value.</param>
+            <param name="newValue">current  DistanceType value.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ImageryLayer.OnGeoCoordinateChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Point,Xamarin.Forms.Point)">
+            <summary>
+            Called when the geo coordinates value is changed.
+            </summary>
+            <param name="bindable">bindable object.</param>
+            <param name="oldValue">previous geo coordinate value.</param>
+            <param name="newValue">current geo coordinatwe value.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ImageryLayer.OnBingMapKeyChanged(Xamarin.Forms.BindableObject,System.String,System.String)">
+            <summary>
+            Called when the Bing maps key is changed.
+            </summary>
+            <param name="bindable">bindable object.</param>
+            <param name="oldValue">previous key value.</param>
+            <param name="newValue">current key value.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ImageryLayer.OnLayerTypePropertyChanged(Xamarin.Forms.BindableObject,Syncfusion.SfMaps.XForms.LayerType,Syncfusion.SfMaps.XForms.LayerType)">
+            <summary>
+            Called when the layer type is changed.
+            </summary>
+            <param name="bindable">bindable object.</param>
+            <param name="oldValue">previous layer type.</param>
+            <param name="newValue">current layer type.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ImageryLayer.OnCanCacheTilesPropertyChanged(Xamarin.Forms.BindableObject,System.Boolean,System.Boolean)">
+            <summary>
+            Called when CanCacheTiles property changes.
+            </summary>
+            <param name="bindable">bindable object.</param>
+            <param name="oldValue">previous value.</param>
+            <param name="newValue">current value.</param>
+        </member>
+        <member name="E:Syncfusion.SfMaps.XForms.ImageryLayer.requestTileUri">
+            <summary>
+            Occurs whenever the uri is set to the tile image
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfMaps.XForms.ImageryLayer.ZoomLevelChanging">
+            <summary>
+            Occurs whenever the level or range changes while zooming the imagery layer of the map. It is an event in the maps.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfMaps.XForms.ImageryLayer.GeoCoordinateChanged">
+            <summary>
+            Occurs whenever the zooming and panning happens in the imagery layer of the maps. It is an event in the maps.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfMaps.XForms.ImageryLayer.RequestTileUri">
+            <summary>
+            Occurs whenever the tile is requested for Uri
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ImageryLayer.RaiseZoomLevelChangingEvent(Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs)">
+            <summary>
+            To raise the event.
+            </summary>
+            <param name="args">Zoom Level Changing Event Args.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ImageryLayer.RaiseGeoCoordinateChangedEvent(Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs,Xamarin.Forms.Point)">
+            <summary>
+            To raise the event.
+            </summary>
+            <param name="args">GeoCoordinate changing event args.</param>
+            <param name="centerPoint">Mapping native center point value to forms.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ImageryLayer.RaiseRequestURIEvent(Syncfusion.SfMaps.XForms.TileUriArgs)">
+            <summary>
+            To raise the request URI event.
+            </summary>
+            <param name="customURIArgs">The custom URI event argument.</param>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ImageryLayer.MapBounds">
+            <summary>
+            Gets the imagery layer bounds value (x, y, width, height) in pixels.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ImageryLayer.TileBounds">
+            <summary>
+            Gets or sets the bounds of imagery layer.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs">
+            <summary>
+            Represents the ZoomLevelChangingEventArgs. To render this event, create an instance of this class <see cref="T:Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs"/> and set required properties.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs.PreviousLevel">
+            <summary>
+            Gets the previous level property of the maps. It provides the previous level while zooming happens in the maps.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs.CurrentLevel">
+            <summary>
+            Gets the current level property of the maps. It provides the current level while zooming happens in the maps.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs.Cancel">
+            <summary>
+            Gets or sets a value indicating whether the cancel is enabled while zooming happens in the maps.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs">
+            <summary>
+            Represents the GeoCoordinateChangedEventArgs. To render this, create an instance of the GeoCoordinateChangedEventArgs class, and set required properties.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs.TopLeft">
+            <summary>
+            Gets the top-left coordinate of the maps. It gives the latitude and longitude of the top-left in imagery layer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs.TopRight">
+            <summary>
+            Gets the top-right coordinate of the maps. It gives the latitude and longitude of the top-right in imagery layer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs.BottomLeft">
+            <summary>
+            Gets the bottom-left coordinate of the maps. It gives the latitude and longitude of the bottom-left in imagery layer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs.BottomRight">
+            <summary>
+            Gets the bottom-right coordinate of the maps. It gives the latitude and longitude of the bottom-right in imagery layer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs.Center">
+            <summary>
+            Gets the center coordinate of the maps. It gives the latitude and longitude of the center in imagery layer.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.TileUriArgs">
+            <summary>
+            Represents the custom URI event arguments. To render the imagery layer with custom URI, the event argument can be used.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TileUriArgs.X">
+            <summary>
+            Gets the X co-Ordinate value of the tile image.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TileUriArgs.Y">
+            <summary>
+            Gets the Y co-Ordinate value of the tile image.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TileUriArgs.ZoomLevel">
+            <summary>
+            Gets the current zoom level value of the tile image.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TileUriArgs.Uri">
+            <summary>
+            Gets or sets the value for uri.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TileUriArgs.UriRequestTask">
+            <summary>
+            Gets or sets the requested uri task asynchronously.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.LatLngBounds">
+            <summary>
+            To calculate the zoom level based on the bounds.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.LatLngBounds.PropertiesChanged">
+            <summary>
+            Gets or sets the changed property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.LatLngBounds.NativeObject">
+            <summary>
+            Gets or sets the native object.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.LatLngBounds.Northeast">
+            <summary>
+            Gets or sets the northeast corner of the geo bounds.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.LatLngBounds.NortheastProperty">
+            <summary>
+            Gets or sets the northeast corner of the geo bounds.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.LatLngBounds.OnNortheastPropertyChanged(Xamarin.Forms.BindableObject,Syncfusion.SfMaps.XForms.Position,Syncfusion.SfMaps.XForms.Position)">
+            <summary>
+            Called when north east property gets changed.
+            </summary>
+            <param name="bindable">Class name.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">changed point.</param>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.LatLngBounds.Southwest">
+            <summary>
+            Gets or sets the southwest corner of the geo bounds.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.LatLngBounds.SouthwestProperty">
+            <summary>
+            Gets or sets the southwest corner of the geo bounds.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.LatLngBounds.OnSouthwestPropertyChanged(Xamarin.Forms.BindableObject,Syncfusion.SfMaps.XForms.Position,Syncfusion.SfMaps.XForms.Position)">
+            <summary>
+            Called when south west property gets changed.
+            </summary>
+            <param name="bindable">Class name.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">changed point.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.LatLngBounds.OnLatLngBoundsChanged(System.String)">
+            <summary>
+            Called when any of property gets changed.
+            </summary>
+            <param name="propertyName">Value changed property name.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.LatLngBounds.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.XForms.LatLngBounds" /> class to render the LatLngBounds of the maps.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.LatLngBounds.#ctor(Syncfusion.SfMaps.XForms.Position,Syncfusion.SfMaps.XForms.Position)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.XForms.LatLngBounds"/> class.
+            Gets the value of south west and north east.
+            </summary>
+            <param name="northeast">north east.</param>
+            <param name="southwest">south west.</param>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.SfMaps">
+            <summary>
+            Represents the SfMaps control. To render this, create an instance of the <see cref="T:Syncfusion.SfMaps.XForms.SfMaps"/> class and set required properties.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.SfMaps.nativeObject">
+            <summary>
+            To store the native object.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.SfMaps.minHeight">
+            <summary>
+            Represents the minimum height.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.SfMaps.minWidth">
+            <summary>
+             Represents the minimum width.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.SfMaps.PropertiesChanged">
+            <summary>
+            Gets or sets the list of properties that are changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.SfMaps.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.XForms.SfMaps" /> class. Using this instance, set a value for required properties in maps.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.SfMaps.NativeObject">
+            <summary>
+            Gets or sets Native object.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.SfMaps.OnBindingContextChanged">
+            <summary>
+            Override method.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.SfMaps.LayersProperty">
+            <summary>
+            Gets or sets the ShapeFileLayer property value from maps. The maps control is maintained through layers, and it can accommodate one or more layers.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.SfMaps.Layers">
+            <summary>
+            Gets or sets the ShapeFileLayer value from maps. The maps control is maintained through layers, and it can accommodate one or more layers.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.SfMaps.EnableZoomingProperty">
+            <summary>
+            Gets or sets a value that indicates whether the zooming is enable or not for maps. It gets a closer look at a particular area in maps.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.SfMaps.EnableZooming">
+            <summary>
+            Gets or sets a value indicating whether the zooming is enabled or not in the maps control. It gets a closer look at a particular area.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.SfMaps.EnablePanningProperty">
+            <summary>
+            Gets or sets a value indicating whether to allow panning or not in maps . This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.SfMaps.EnablePanning">
+            <summary>
+            Gets or sets a value indicating whether to allow panning in maps. It moves a map around to focus on a specific area.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.SfMaps.MinZoom">
+            <summary>
+            Gets or sets the minimum zooming level of the maps. It sets a value of the minimum zoom level for maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.SfMaps.MinZoomProperty">
+            <summary>
+            Gets or sets the minimum zooming level property of maps. It sets a value of the minimum zoom level for maps.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.SfMaps.MaxZoom">
+            <summary>
+            Gets or sets the maximum zooming level property of the maps. It sets a value of the maximum zoom level for maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.SfMaps.MaxZoomProperty">
+            <summary>
+            Gets or sets the maximum zooming level property of the maps. It sets a value of the maximum zoom level for maps.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.SfMaps.ZoomLevel">
+            <summary>
+            Gets or sets the ZoomLevel value of maps. It is used to customize the zooming level value in maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.SfMaps.ZoomLevelProperty">
+            <summary>
+            Gets or sets the ZoomLevel value property of maps. It customizes the zooming level value in maps.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.SfMaps.OnZoomLevelChanged(Xamarin.Forms.BindableObject,System.Int32,System.Int32)">
+            <summary>
+            This method is called when the zoom level is changed.
+            </summary>
+            <param name="bindable">bindable object.</param>
+            <param name="oldValue">previous zoom level.</param>
+            <param name="newValue">current zoom level.</param>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.SfMaps.BaseMapIndex">
+            <summary>
+            Gets or sets the BaseMapIndex value to the maps. This property allows drill-down from main layer to another layer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.SfMaps.BaseMapIndexProperty">
+            <summary>
+            Gets or sets a value for the BaseMapIndex property to the maps. This property allows drill-down from main layer to another layer.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfMaps.XForms.SfMaps.tooltipOpening">
+            <summary>
+            To declare the tooltipOpening
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfMaps.XForms.SfMaps.Tapped">
+            <summary>
+            Event raised when the control tapped. 
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfMaps.XForms.SfMaps.Panning">
+            <summary>
+            Event raised when the dragging finger on the map control.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfMaps.XForms.SfMaps.TooltipOpening">
+            <summary>
+            Occurs whenever tooltip is rendered for maps. It is an event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.SfMaps.Dispose">
+            <summary>
+            Disposes the resources.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.SfMaps.RaiseTooltipOpeningEvent(Syncfusion.SfMaps.XForms.TooltipOpeningEventArgs)">
+            <summary>
+            To raise the event.
+            </summary>
+            <param name="args">Tooltip opening Event Args.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.SfMaps.RaiseTapEvent(Syncfusion.SfMaps.XForms.MapTappedEventArgs)">
+            <summary>
+            Raises the map tapped event.
+            </summary>
+            <param name="args">Tapped event arguments <see cref="T:Syncfusion.SfMaps.XForms.MapTappedEventArgs"/>.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.SfMaps.RaisePanEvent(Syncfusion.SfMaps.XForms.MapPanUpdatedEventArgs)">
+            <summary>
+            Raises the map panning event.
+            </summary>
+            <param name="args">Panning event arguments <see cref="T:Syncfusion.SfMaps.XForms.MapPanUpdatedEventArgs"/>.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.SfMaps.UpdateTappedLocation(System.Single,System.Single)">
+            <summary>
+            Updates the position and invokes the tapped event.
+            </summary>
+            <param name="x">x position(screen coordinate).</param>
+            <param name="y">y position(screen coordinate).</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.SfMaps.UpdatePannedLocation(System.Single,System.Single,System.String)">
+            <summary>
+            Updates the position with event state and invokes the panning event.
+            </summary>
+            <param name="x">x position(screen coordinate).</param>
+            <param name="y">y position(screen coordinate).</param>
+            <param name="eventState">Current state of the panning event.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.SfMaps.Syncfusion#XForms#Themes#IParentThemeElement#GetThemeDictionary">
+            <summary>
+            Returns the maps style.
+            </summary>
+            <returns>Resource Dictionary.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.SfMaps.Syncfusion#XForms#Themes#IThemeElement#OnControlThemeChanged(System.String,System.String)">
+            <summary>
+            Called when the control theme is changed.
+            </summary>
+            <param name="oldTheme">Old Theme.</param>
+            <param name="newTheme">New Theme.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.SfMaps.Syncfusion#XForms#Themes#IThemeElement#OnCommonThemeChanged(System.String,System.String)">
+            <summary>
+            Called when the common theme is changed.
+            </summary>
+            <param name="oldTheme">Old Theme.</param>
+            <param name="newTheme">New Theme.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.SfMaps.OnSizeRequest(System.Double,System.Double)">
+            <summary>
+            Raises the size request event.
+            </summary>
+            <param name="widthConstraint">Width constraint.</param>
+            <param name="heightConstraint">Height constraint.</param>
+            <returns>size request.</returns>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.MapPanUpdatedEventArgs">
+            <summary>
+            Class is used to specify the arguments of map panning event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapPanUpdatedEventArgs.Position">
+            <summary>
+            Gets the screen point (x, y) of maps on panning.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Syncfusion.SfMaps.XForms.MapPanUpdatedEventArgs.Started" -->
+        <member name="P:Syncfusion.SfMaps.XForms.MapPanUpdatedEventArgs.Completed">
+            <summary>
+            Gets the boolean value whether the control completed panning action. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.MapTappedEventArgs">
+            <summary>
+            Class is used to specify the arguments of map tapped event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapTappedEventArgs.Position">
+            <summary>
+            Gets the screen point (x, y) of maps on tapped.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.BubbleMarkerSetting">
+            <summary>
+            Represents the BubbleMarkerSetting. To render this, create an instance of BubbleMarkerSetting class, and set required properties.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.PropertiesChanged">
+            <summary>
+            Gets or sets the list of properties that are changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.XForms.BubbleMarkerSetting" /> class. Using this, you can set a value for the required properties.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.NativeObject">
+            <summary>
+            Gets or sets Native object.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.ValuePathProperty">
+            <summary>
+            Gets or sets the field value property to be fetched from data for each bubble. It sets a value path for bubble marker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.ValuePath">
+            <summary>
+            Gets or sets the field value to be fetched from data for each bubble. It sets a value path for bubble marker.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.ColorValuePathProperty">
+            <summary>
+            Gets or sets the field value to be fetched from data for each bubble. It is used to determine the bubble color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.ColorValuePath">
+            <summary>
+            Gets or sets the field value property to be fetched from data for each bubble. It is used to determine the bubble color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.TooltipSettings">
+            <summary>
+            Gets or sets TooltipSettings for bubble marker. It is used to set tooltip setting for bubble marker.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.OnTooltipSettingsChanged(Xamarin.Forms.BindableObject,Syncfusion.SfMaps.XForms.TooltipSetting,Syncfusion.SfMaps.XForms.TooltipSetting)">
+            <summary>
+            The Tooltip settings changed.
+            </summary>
+            <param name="bindable">The bindable object.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">The new value.</param>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.TooltipSettingsProperty">
+            <summary>
+            Gets or sets the TooltipSettings property for bubble marker. It is used to set tooltip setting for bubble marker.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.MinSizeProperty">
+            <summary>
+            Gets or sets the minimum size property of the bubble. It customizes the minimum size of a bubble marker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.MinSize">
+            <summary>
+            Gets or sets the minimum size of the bubble. It customizes the minimum size of a bubble marker.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.MaxSizeProperty">
+            <summary>
+            Gets or sets the maximum size property of the bubble marker. It customizes the maximum size of a bubble marker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.MaxSize">
+            <summary>
+            Gets or sets the maximum size of the bubble marker. It customizes the maximum size of a bubble marker.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.FillProperty">
+            <summary>
+            Gets or sets the fill color property for bubbles. You customize the fill color of bubbles using the fill color property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.Fill">
+            <summary>
+            Gets or sets the fill color for bubbles. You can customize the fill color of bubbles using the fill color property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.OpacityProperty">
+            <summary>
+            Gets or sets the opacity color property value for bubbles. You can customize the opacity color value for bubble marker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.Opacity">
+            <summary>
+            Gets or sets the opacity color value for bubbles. You can customize the opacity color value for bubble marker.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.ColorMappingsProperty">
+            <summary>
+            Gets or sets the ColorMappings property of the bubble marker. It customizes the bubble color based on underlying value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.ColorMappings">
+            <summary>
+            Gets or sets the ColorMappings of bubble marker. It customizes the bubble color based on underlying value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.ShowBubblesProperty">
+            <summary>
+            Gets or sets a value that indicates whether to display the bubbles or not. It customizes the visibility of bubbles.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.ShowBubbles">
+            <summary>
+            Gets or sets a value indicating whether to display the bubbles or not. It customizes the visibility of bubble marker.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.OnBindingContextChanged">
+            <summary>
+            Override method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.Syncfusion#XForms#Themes#IThemeElement#OnControlThemeChanged(System.String,System.String)">
+            <summary>
+            Called when the control theme is changed.
+            </summary>
+            <param name="oldTheme">Old Theme.</param>
+            <param name="newTheme">New Theme.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.Syncfusion#XForms#Themes#IThemeElement#OnCommonThemeChanged(System.String,System.String)">
+            <summary>
+            Called when the common theme is changed.
+            </summary>
+            <param name="oldTheme">Old Theme.</param>
+            <param name="newTheme">New Theme.</param>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.ColorMapping">
+            <summary>
+            Represents the ColorMapping. To render this color mapping, create an instance of the <see cref="T:Syncfusion.SfMaps.XForms.ColorMapping" /> class, and set required properties.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ColorMapping.PropertiesChanged">
+            <summary>
+            Gets or sets a value for property is changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ColorMapping.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.XForms.ColorMapping" /> class. Using this instance, you can set a value for required properties for color mapping.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ColorMapping.NativeObject">
+            <summary>
+            Gets or sets a value when native object is changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ColorMapping.OnColorMappingsPropertyChanged(System.String)">
+            <summary>
+            Called when the color mapping property is changed.
+            </summary>
+            <param name="propertyName">color mapping property.</param>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ColorMapping.ColorProperty">
+            <summary>
+            Gets or sets the color property for mapping of map shapes. It customizes the color value for specified value path.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ColorMapping.Color">
+            <summary>
+            Gets or sets the color for mapping of map shapes. It customizes the color value for specified value path.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ColorMapping.LegendLabelProperty">
+            <summary>
+            Gets or sets the name of the legendLabel property for maps. It provides information about the maps. You can customize the legend label.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ColorMapping.LegendLabel">
+            <summary>
+            Gets or sets the name of legendLabel for maps. It provides information about the maps. You can customize the legend label.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.RangeColorMapping">
+            <summary>
+            Represents RangeColorMapping. To render this, create an instance of the <see cref="T:Syncfusion.SfMaps.XForms.RangeColorMapping" /> class, and set required properties.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.RangeColorMapping.From">
+            <summary>
+            Gets or sets the color range start value property. It defines the color range and color for a range, which can be specified using the Color property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.RangeColorMapping.FromProperty">
+            <summary>
+            Gets or sets the value for the from property. It defines the color range and color for a range, which can be specified using the Color property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.RangeColorMapping.To">
+            <summary>
+            Gets or sets the color range end value. It defines the color range and color for a range, which can be specified using the Color property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.RangeColorMapping.ToProperty">
+            <summary>
+            Gets or sets the color range end value property. It defines the color range and color for a range, which can be specified using the Color property.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.EqualColorMapping">
+            <summary>
+            Represents EqualColorMapping. To render this, create an instance of the <see cref="T:Syncfusion.SfMaps.XForms.EqualColorMapping" /> class, and set required properties.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.EqualColorMapping.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.XForms.EqualColorMapping" /> class. Using this instance, you can set a value for required properties of color mapping.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.EqualColorMapping.ValueProperty">
+            <summary>
+            Gets or sets the ColorMapping property value to maps. It applies the color for shapes based on underlying value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.EqualColorMapping.Value">
+            <summary>
+            Gets or sets the ColorMapping value to maps. It applies the color for shapes based on underlying value.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.DataLabelSetting">
+            <summary>
+             Represents the DataLabelSetting. To render thisdata label setting, Create an instance of <see cref="T:Syncfusion.SfMaps.XForms.DataLabelSetting" /> class and set required properties.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.DataLabelSetting.PropertiesChanged">
+            <summary>
+            Gets or sets a value for property is changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.DataLabelSetting.NativeObject">
+            <summary>
+            Gets or sets a value when native object is changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.DataLabelSetting.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.XForms.DataLabelSetting" /> class, Using this instance we can set value for required properties of an DataLabelSetting.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.DataLabelSetting.TextColorProperty">
+            <summary>
+            Gets or sets the text color property of the label items. Used to customize the color of an text. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.DataLabelSetting.TextColor">
+            <summary>
+            Gets or sets the text color of the label items. Used to customize the color of an text. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Xamarin.Forms.Color"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.DataLabelSetting.FontFamilyProperty">
+            <summary>
+             Gets or sets the font family property for the data label in maps. Used to change the font family of data label.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.DataLabelSetting.FontFamily">
+            <summary>
+            Gets or sets the font family for the data label in maps. Used to change the font family of data label.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.DataLabelSetting.FontSizeProperty">
+            <summary>
+            Dets or sets the size property of the font for the data label. Used to change the size of an font for data labels.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.DataLabelSetting.FontSize">
+            <summary>
+            Gets or sets the size of the font for the data label. Used to change the size of an font for data labels.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.DataLabelSetting.FontAttributesProperty">
+            <summary>
+            Gets or sets the font attributes property for the data label. Used to change the font style of an data labels.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.DataLabelSetting.FontAttributes">
+            <summary>
+            Gets or sets the font attributes for the data label. Used to change the font style of an data labels.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.DataLabelSetting.IntersectionActionProperty">
+            <summary>
+            Gets or sets the intersect action property for the data label. Used to align the data labels that overlaps in maps.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.DataLabelSetting.IntersectionAction">
+            <summary>
+            Gets or sets the intersect action for the data label. Used to align the data labels that overlaps in maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.DataLabelSetting.SmartLabelModeProperty">
+            <summary>
+            Gets or sets the SmartLabelMode property for the data label. Used to aligns the labels smartly within shape boundaries and avoids labels overlapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.DataLabelSetting.Syncfusion#XForms#Themes#IThemeElement#OnControlThemeChanged(System.String,System.String)">
+            <summary>
+            Called when the control theme is changed.
+            </summary>
+            <param name="oldTheme">Old Theme.</param>
+            <param name="newTheme">New Theme.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.DataLabelSetting.Syncfusion#XForms#Themes#IThemeElement#OnCommonThemeChanged(System.String,System.String)">
+            <summary>
+            Called when the common theme is changed.
+            </summary>
+            <param name="oldTheme">Old Theme.</param>
+            <param name="newTheme">New Theme.</param>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.DataLabelSetting.SmartLabelMode">
+            <summary>
+            Gets or sets the SmartLabelMode for the data label. Used to aligns the labels smartly within shape boundaries and avoids labels overlapping.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.IntersectAction">
+            <summary>
+            IntersectAction of DataLabels, We can customize data labels overlapping by using intersect action.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.IntersectAction.None">
+            <summary>
+            Defines None of the IntersectAction
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.IntersectAction.Trim">
+            <summary>
+            Defines Trim mode of the IntersectAction
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.IntersectAction.Hide">
+            <summary>
+            Defines hide of the IntersectAction
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.MapLegendSetting">
+            <summary>
+            Represents the MapLegendSetting. To render this, create an instance of the <see cref="T:Syncfusion.SfMaps.XForms.MapLegendSetting" /> class, and set required properties.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLegendSetting.PropertiesChanged">
+            <summary>
+            Gets or sets the list of properties that are changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLegendSetting.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.XForms.MapLegendSetting" /> class. Using this instance, you can set a value for the required properties.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLegendSetting.NativeObject">
+            <summary>
+            Gets or sets the native object.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLegendSetting.NativeMapObject">
+            <summary>
+            Gets or sets Native maps object.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapLegendSetting.FontSizeProperty">
+            <summary>
+            Gets or sets the font size property of the legend labels. It is used to customize the font size of legend labels.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLegendSetting.FontSize">
+            <summary>
+            Gets or sets the font size of the legend labels. It is used to customize the font size of the legend labels.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapLegendSetting.TextColorProperty">
+            <summary>
+            Gets or sets a value of the textColor property for legend. It is used to change the text color of the legend labels.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLegendSetting.TextColor">
+            <summary>
+            Gets or sets a value of the textColor property for legend. It is used to change the text color of the legend labels.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapLegendSetting.FontFamilyProperty">
+            <summary>
+            Gets or sets a value of the FontFamily property for the legend. It is used to change the font family of the legend labels.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLegendSetting.FontFamily">
+            <summary>
+            Gets or sets a value of the FontFamily for the legend. It is used to change the font family of legend labels.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapLegendSetting.FontAttributesProperty">
+            <summary>
+            Gets or sets a value of the FontFamily property for the legends. It is used to change the font style of the legend labels.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLegendSetting.FontAttributes">
+            <summary>
+            Gets or sets a value of the FontFamily for the legends. It changes the font style of the legend labels.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapLegendSetting.ItemMarginProperty">
+            <summary>
+            Gets or sets a value of the spacing property for the legends. It customizes the spacing between the legend of the maps.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLegendSetting.ItemMargin">
+            <summary>
+            Gets or sets a value of the spacing property for the legends. It customizes the spacing between the legend of the maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapLegendSetting.IconSizeProperty">
+            <summary>
+            Gets or sets the iconSize property value of the legends. It changes the icon size value of legend. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLegendSetting.IconSize">
+            <summary>
+            Gets or sets the iconSize value of the legends. It changes the icon size value of legend. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapLegendSetting.LegendPositionProperty">
+            <summary>
+            Gets or sets the position property of the legends. It customizes the horizontal and vertical positions of the legends.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLegendSetting.LegendPosition">
+            <summary>
+            Gets or sets the position of the legend. It customizes the horizontal and vertical positions of the legends.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapLegendSetting.ShowLegendProperty">
+            <summary>
+            Gets or sets a value that indicates whether to show the map legends or not. It customizes the visibility of legends.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLegendSetting.ShowLegend">
+            <summary>
+            Gets or sets a value indicating whether to show the legends. It is used to customize the visibility of the legends.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapLegendSetting.LegendIconProperty">
+            <summary>
+            Gets or sets the LegendIcon property of the legends. You can set different types of legend icon type to legends.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLegendSetting.LegendIcon">
+            <summary>
+            Gets or sets the LegendIcon of the legend. You can set different types of legend icon type to legends.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapLegendSetting.LegendTypeProperty">
+            <summary>
+            Gets or sets the LegendType. It decides whether the legend should need to render for shapes or bubbles. The default value is "Layers".
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLegendSetting.LegendType">
+            <summary>
+            Gets or sets a value indicating whether the LegendType defines whether the legend should need to render for shapes or bubbles. The default value is "Layers".
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapLegendSetting.HorizontalAlignmentProperty">
+            <summary>
+            Gets or sets a value of the HorizontalAlignment property. It aligns the legends Horizontally based on alignment.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLegendSetting.HorizontalAlignment">
+            <summary>
+            Gets or sets a value of the HorizontalAlignment property. It aligns the legends horizontally based on alignment.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLegendSetting.Syncfusion#XForms#Themes#IThemeElement#OnControlThemeChanged(System.String,System.String)">
+            <summary>
+            Called when the control theme is changed.
+            </summary>
+            <param name="oldTheme">Old Theme.</param>
+            <param name="newTheme">New Theme.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLegendSetting.Syncfusion#XForms#Themes#IThemeElement#OnCommonThemeChanged(System.String,System.String)">
+            <summary>
+            Called when the common theme is changed.
+            </summary>
+            <param name="oldTheme">Old Theme.</param>
+            <param name="newTheme">New Theme.</param>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapLegendSetting.VerticalAlignmentProperty">
+            <summary>
+            Gets or sets the value of the VerticalAlignment property. It aligns the legends vertically based on alignment.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLegendSetting.VerticalAlignment">
+            <summary>
+            Gets or sets a value of the VerticalAlignment property. It aligns the legends vertically based on alignment.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.LegendIcon">
+            <summary>
+            Defines the types of LegendIcon in the maps. You can set different type of legend icons to the maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.LegendIcon.Default">
+            <summary>
+            LegendIcon type is Default
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.LegendIcon.Circle">
+            <summary>
+            LegendIcon type is Circle
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.LegendIcon.Rectangle">
+            <summary>
+            LegendIcon type is Rectangle
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.LegendIcon.Diamond">
+            <summary>
+            LegendIcon type is Diamond
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.LegendIcon.Triangle">
+            <summary>
+            LegendIcon type is Triangle
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.LegendType">
+            <summary>
+            Defines the types of legends in the maps. You can set two types of legend types to the maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.LegendType.Layers">
+            <summary>
+            Legend type is Layers
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.LegendType.Bubbles">
+            <summary>
+            Legend type is Bubbles
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.HorizontalAlignment">
+            <summary>
+            Represents HorizontalAlignment for Legends. You can change the legend position based on alignment.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.HorizontalAlignment.Start">
+            <summary>
+            Legend Horizontal Alignment is Start
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.HorizontalAlignment.Center">
+            <summary>
+            Legend Horizontal Alignment is Center
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.HorizontalAlignment.End">
+            <summary>
+            Legend Horizontal Alignment is End
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.VerticalAlignment">
+            <summary>
+            Represents VerticalAlignment for the legends. You can change the legend position based on alignment.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.VerticalAlignment.Top">
+            <summary>
+            Legend Vertical Alignment is Start
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.VerticalAlignment.Center">
+            <summary>
+            Legend Vertical Alignment is Center
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.VerticalAlignment.Bottom">
+            <summary>
+            Legend Vertical Alignment is End
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.MapMarker">
+            <summary>
+             Represents MapMarker. To render this, create an instance of the <see cref="T:Syncfusion.SfMaps.XForms.MapMarker" /> class, and set required properties.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarker.PropertiesChanged">
+            <summary>
+            Gets or sets the list of properties that are changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapMarker.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.XForms.MapMarker" /> class. Using this instance, you can set value for the required properties of map marker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarker.NativeObject">
+            <summary>
+            Gets or sets Native object.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapMarker.LatitudeProperty">
+            <summary>
+             Gets or sets the latitude point, which determines the y-axis position of marker. It customizes the position of marker using the latitude property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarker.Latitude">
+            <summary>
+            Gets or sets the latitude point, which determines the y-axis position of marker. It customizes the position of marker using the latitude property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapMarker.LongitudeProperty">
+            <summary>
+            Gets or sets the longitude point, which determines the y-axis position of marker. It customizes the position of marker using the longitude property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarker.Longitude">
+            <summary>
+             Gets or sets the longitude point, which determine the x-axis position of marker. It customizes the position of marker using the longitude property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapMarker.OnControlThemeChanged(System.String,System.String)">
+            <summary>
+            Called when the control theme is changed.
+            </summary>
+            <param name="oldTheme">Old Theme.</param>
+            <param name="newTheme">New Theme.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapMarker.OnCommonThemeChanged(System.String,System.String)">
+            <summary>
+            Called when the common theme is changed.
+            </summary>
+            <param name="oldTheme">Old Theme.</param>
+            <param name="newTheme">New Theme.</param>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapMarker.LabelProperty">
+            <summary>
+            Gets or sets the text property, which displays some information about the annotation in text format for map marker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarker.Label">
+            <summary>
+            Gets or sets the text that displays some information about the annotation in text format for map marker.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.MapMarkerSetting">
+            <summary>
+            Represents MapMarkerSetting. To render this, create an instance of the <see cref="T:Syncfusion.SfMaps.XForms.MapMarkerSetting" /> class, and set required properties.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarkerSetting.PropertiesChanged">
+            <summary>
+            Gets or sets the list of properties that are changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapMarkerSetting.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.XForms.MapMarkerSetting" /> class. Using this instance, you can set a value for the required properties.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarkerSetting.NativeObject">
+            <summary>
+            Gets or sets Native object.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapMarkerSetting.IconSizeProperty">
+            <summary>
+            Gets or sets the size of the MarkerIcon property for map marker. It customizes the icon size of the map markers.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarkerSetting.IconSize">
+            <summary>
+            Gets or sets the size of the MarkerIcon in the maps. It is used to customize the icon size of the map markers.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapMarkerSetting.LabelSizeProperty">
+            <summary>
+            Gets or sets the LabelSize property of the map markers. It is used to change the label size of the map markers.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarkerSetting.LabelSize">
+            <summary>
+            Gets or sets the fontstyle of the label for map markers. It is used to change the label size of the map markers.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapMarkerSetting.MarkerIconProperty">
+            <summary>
+            Gets or sets the MarkerIcon property type for map markers. You can change the different type of marker icons for map markers.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarkerSetting.MarkerIcon">
+            <summary>
+            Gets or sets the MarkerIcon type for the map markers. You can change the different type of marker icon for map markers.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapMarkerSetting.ImageSourceProperty">
+            <summary>
+            Gets or sets the value for image source property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarkerSetting.ImageSource">
+            <summary>
+            Gets or sets the MarkerIcon path of image source for map marker. It sets image source path to show the images in map marker.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapMarkerSetting.IconColorProperty">
+            <summary>
+            Gets or sets the color property of the map marker icons. It changes the color of the map marker icons in the maps.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarkerSetting.IconColor">
+            <summary>
+            Gets or sets the color of the map marker icons. It is used to change the color of the map marker icons in the maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapMarkerSetting.LabelColorProperty">
+            <summary>
+            Gets or sets the color for the label property of the map markers. It changes the label color of the map markers.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarkerSetting.LabelColor">
+            <summary>
+            Gets or sets the color for the labels of a map marker. It is used to change the label color of the map markers.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarkerSetting.TooltipSettings">
+            <summary>
+            Gets or sets the tooltip settings for map marker. It is used to customize the tooltip settings for map marker.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapMarkerSetting.OnTooltipSettingsChanged(Xamarin.Forms.BindableObject,Syncfusion.SfMaps.XForms.TooltipSetting,Syncfusion.SfMaps.XForms.TooltipSetting)">
+            <summary>
+            The Tooltip settings changed.
+            </summary>
+            <param name="bindable">The bindable object.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">The new value.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapMarkerSetting.Syncfusion#XForms#Themes#IThemeElement#OnControlThemeChanged(System.String,System.String)">
+            <summary>
+            Called when the control theme is changed.
+            </summary>
+            <param name="oldTheme">Old Theme.</param>
+            <param name="newTheme">New Theme.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapMarkerSetting.Syncfusion#XForms#Themes#IThemeElement#OnCommonThemeChanged(System.String,System.String)">
+            <summary>
+            Called when the common theme is changed.
+            </summary>
+            <param name="oldTheme">Old Theme.</param>
+            <param name="newTheme">New Theme.</param>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapMarkerSetting.TooltipSettingsProperty">
+            <summary>
+            The TooltipSettings bindable Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarkerSetting.FontAttributes">
+            <summary>
+            Gets or sets the value for font attributes.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapMarkerSetting.FontAttributesProperty">
+            <summary>
+            Bindable property for <see cref="P:Syncfusion.SfMaps.XForms.MapMarkerSetting.FontAttributes"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarkerSetting.FontFamily">
+            <summary>
+            Gets or sets the value for font family.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapMarkerSetting.FontFamilyProperty">
+            <summary>
+            Bindable property for <see cref="P:Syncfusion.SfMaps.XForms.MapMarkerSetting.FontFamily"/> property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapMarkerSetting.VerticalAlignmentProperty">
+            <summary>
+            Gets or sets the VerticalAlignment property type for map markers. You can change the different type of position for map markers.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarkerSetting.VerticalAlignment">
+            <summary>
+            Gets or sets the vertical position of MarkerAlignment type for the map markers. You can change the different type of marker icon for map markers.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapMarkerSetting.HorizontalAlignmentProperty">
+            <summary>
+            Gets or sets the HorizontalAlignment property type for map markers. You can change the different type of position for map markers.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarkerSetting.HorizontalAlignment">
+            <summary>
+            Gets or sets the horizontal position of MarkerAlignment type for the map markers. You can change the different type of marker icon for map markers.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.MapMarkerIcon">
+            <summary>
+            Enumurates the map marker icon. You can change the map marker icon types.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapMarkerIcon.Circle">
+            <summary>
+            Represents the map marker icon as cicle
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapMarkerIcon.Square">
+            <summary>
+            Represents the map marker icon as square
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapMarkerIcon.Rectangle">
+            <summary>
+            Represents the map marker icon as rectangle
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapMarkerIcon.Diamond">
+            <summary>
+            Represents the map marker icon as diamond
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapMarkerIcon.Image">
+            <summary>
+            Represents the map marker icon as image
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.MarkerAlignment">
+            <summary>
+            Enumurates the Marker Alignment. You can change the map marker position.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MarkerAlignment.Near">
+            <summary>
+            Represents the map marker icon is in Near position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MarkerAlignment.Center">
+            <summary>
+            Represents the map marker icon is in Center position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MarkerAlignment.Far">
+            <summary>
+            Represents the map marker icon is in Far position
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.ShapeFileLayer">
+            <summary>
+            Represents ShapeFileLayer. To render this, create an instance of the <see cref="T:Syncfusion.SfMaps.XForms.ShapeFileLayer"/> class and set required properties.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.NativeObject">
+            <summary>
+            Gets or sets Native Layer in Forms Layer object.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ShapeFileLayer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.XForms.ShapeFileLayer" /> class to render the shape file layer of the maps.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ShapeFileLayer.GetPointFromLatitudeLongitude(Xamarin.Forms.Point)">
+            <summary>
+            Convert latitude llongitude to point X and point Y.
+            </summary>
+            <param name="point">To get the latitude and longitude values.</param>
+            <returns>returns the point X and pointY values.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ShapeFileLayer.GetLatitudeLongitudeFromPoint(Xamarin.Forms.Point)">
+            <summary>
+            Convert point X and point Y to longitude and latitude values.
+            </summary>
+            <param name="point">To get the point X and point Y values.</param>
+            <returns>returns the longitude and latitude values.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ShapeFileLayer.ReadAsJsonStream(System.IO.Stream)">
+            <summary>
+            To render the stream with json data.
+            </summary>
+            <param name="stream"> stream contains json data.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ShapeFileLayer.ReadAsStream(System.IO.Stream)">
+            <summary>
+            To read the stream contains shape file data.
+            </summary>
+            <param name="stream">stream contains shape file data.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ShapeFileLayer.ReadAsStream(System.IO.Stream,System.IO.Stream)">
+            <summary>
+            To read the stream contains shape file data and db file data.
+            </summary>
+            <param name="shapeStream">stream contains shape file data.</param>
+            <param name="dbStream">db file data.</param>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeFileLayer.EnableSelectionProperty">
+            <summary>
+            Gets or sets a value to the enable selection property of the shape file layer in the maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.EnableSelection">
+            <summary>
+            Gets or sets a value indicating whether to enable the selection or not. The default value is false.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeFileLayer.UriProperty">
+            <summary>
+            Gets or sets a value to the uri property of the shape file layer in the maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.Uri">
+            <summary>
+            Gets or sets the uri property for the shapefile. It represents a layer used to add in the shapes of the shape file layer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeFileLayer.ShapeIDPathProperty">
+            <summary>
+            Gets or sets a value to the shape id path property of the shape file layer in the maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.ShapeIDPath">
+            <summary>
+            Gets or sets the ID of a shape from the ItemsSource of the shape file layer of the maps. It represents the data in item source.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeFileLayer.ShapeIDTableFieldProperty">
+            <summary>
+            Gets or sets a value to the shape id table field property of the shape file layer in the maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.ShapeIDTableField">
+            <summary>
+            Gets or sets the string type property that refers to the column name in the dbf file to identify the shape in the maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeFileLayer.ItemsSourceProperty">
+            <summary>
+            Gets or sets a value to the item source property of the shape file layer in the maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.ItemsSource">
+            <summary>
+            Gets or sets the item source value to the shape file layer of the maps. It represents a value to be displayed on the maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeFileLayer.MapPointTemplateProperty">
+            <summary>
+            Gets or sets a value to the map pointer template property of the shape file layer in the maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.MapPointTemplate">
+            <summary>
+            Gets or sets a map point template of the shape file layer in the maps. It represents a view that can be displayed on the shape file layer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeFileLayer.MapPointIconProperty">
+            <summary>
+            Gets or sets a value to the map pointer icon property of the shape file layer in the maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.MapPointIcon">
+            <summary>
+            Gets or sets the marker icon value of the shape file layer. The default value of the map point icon is circle.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ShapeFileLayer.OnMapPointIconSizeChanged(Xamarin.Forms.BindableObject,System.Double,System.Double)">
+            <summary>
+            Called when the map point size is changed.
+            </summary>
+            <param name="bindable">The bindable object.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">The new value.</param>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeFileLayer.MapPointIconSizeProperty">
+            <summary>
+            Bindable property of<see cref="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.MapPointIconSize"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.MapPointIconSize">
+            <summary>
+            Gets or sets the value for map point icon size.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeFileLayer.MapPointHorizontalAlignmentProperty">
+            <summary>
+            Bindable property of<see cref="T:Syncfusion.SfMaps.XForms.HorizontalAlignment"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.MapPointHorizontalAlignment">
+            <summary>
+            Gets or sets the value for horizontal algnment of map point icon.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ShapeFileLayer.OnHorizontalAlignmentPropertyChanged(Xamarin.Forms.BindableObject,Syncfusion.SfMaps.XForms.MarkerAlignment,Syncfusion.SfMaps.XForms.MarkerAlignment)">
+            <summary>
+            This is called when the horizontal alignment property is changed.
+            </summary>
+            <param name="bindable">The bindable object.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">The new value.</param>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeFileLayer.MapPointVerticalAlignmentProperty">
+            <summary>
+            Bindable property of<see cref="T:Syncfusion.SfMaps.XForms.VerticalAlignment"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.MapPointVerticalAlignment">
+            <summary>
+            Gets or sets the value for vertical alignment of map point icon.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ShapeFileLayer.OnVerticalAlignmentPropertyChanged(Xamarin.Forms.BindableObject,Syncfusion.SfMaps.XForms.MarkerAlignment,Syncfusion.SfMaps.XForms.MarkerAlignment)">
+            <summary>
+            This method is called when the ertical alignment property is changed.
+            </summary>
+            <param name="bindable">The bindable object.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">The new value.</param>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeFileLayer.ShapeSettingsProperty">
+            <summary>
+            Gets or sets a value to the shape settings property of the shape file layer in maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.ShapeSettings">
+            <summary>
+            Gets or sets the shapeSettings value to the shape file layer of the maps. It customizes the color and stroke of the shape. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.TooltipSettings">
+            <summary>
+            Gets or sets the tooltipsettings value of the shape file layer. It shows the value of the shape in tooltips.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ShapeFileLayer.OnTooltipSettingsChanged(Xamarin.Forms.BindableObject,Syncfusion.SfMaps.XForms.TooltipSetting,Syncfusion.SfMaps.XForms.TooltipSetting)">
+            <summary>
+            The Tooltip settings changed.
+            </summary>
+            <param name="bindable">The bindable object.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">The new value.</param>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeFileLayer.TooltipSettingsProperty">
+            <summary>
+            Gets or sets the tooltipsettings value of the shape file layer in the maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeFileLayer.LegendSettingsProperty">
+            <summary>
+            Gets or sets the value for legend settings property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.LegendSettings">
+            <summary>
+            Gets or sets the LegendSettings Value to the maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeFileLayer.DataLabelSettingsProperty">
+            <summary>
+            Gets or sets the value for data label settings property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.DataLabelSettings">
+            <summary>
+            Gets or sets the DataLabelSettings Value to the maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeFileLayer.BubbleMarkerSettingsProperty">
+            <summary>
+            Gets or sets the value for bubble marker settings property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.BubbleMarkerSettings">
+            <summary>
+            Gets or sets the bubbleMarkerSetting value to maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeFileLayer.ShowMapItemsProperty">
+            <summary>
+            Gets or sets the value for show map items property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.ShowMapItems">
+            <summary>
+            Gets or sets a value indicating whether to show map items or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeFileLayer.SelectionModeProperty">
+            <summary>
+            Gets or sets the value for selection mode property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.SelectionMode">
+            <summary>
+            Gets or sets the selection mode  for the Shapefile layer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeFileLayer.GeometryTypeProperty">
+            <summary>
+            Gets or sets the value for geometry type property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.GeometryType">
+            <summary>
+            Gets or sets the geometry type for maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeFileLayer.PointsProperty">
+            <summary>
+            The BindableProperty for <see cref="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.Points"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.Points">
+            <summary>
+            Gets or sets the collection of points. It is used to draw multi line over the map by using the points.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ShapeFileLayer.OnShapeTypePropertyChanged(Xamarin.Forms.BindableObject,Syncfusion.SfMaps.XForms.ShapeType,Syncfusion.SfMaps.XForms.ShapeType)">
+            <summary>
+            To change the ShapeType property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeFileLayer.ShapeTypeProperty">
+            <summary>
+            The BindableProperty for <see cref="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.ShapeType"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.ShapeType">
+            <summary>
+            Gets or sets a shape type like either a polygon or a polyline or a point icon on the map.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.SelectedItems">
+            <summary>
+            Gets or sets to create instance of shape file layer collection,.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ShapeFileLayer.OnBindingContextChanged">
+            <summary>
+            Override method.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.ShapeFileLayer.ShapeSelectionEventHandler">
+            <summary>
+            Maps event handler.
+            </summary>
+            <param name="data">shape data.</param>
+        </member>
+        <member name="E:Syncfusion.SfMaps.XForms.ShapeFileLayer.ShapeSelected">
+            <summary>
+            Occurs when on Shape is tapped.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ShapeFileLayer.OnMapShapeSelected(System.Object)">
+            <summary>
+            Map shape is tapped.
+            </summary>
+            <param name="data">data.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ShapeFileLayer.OnMapShapeSelectionChanged(Syncfusion.SfMaps.XForms.ShapeSelectedEventArgs)">
+            <summary>
+            Maps shape is tapped.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="E:Syncfusion.SfMaps.XForms.ShapeFileLayer.ShapeSelectionChanged">
+            <summary>
+            Occur when shape selection changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ShapeFileLayer.Dispose">
+            <summary>
+            Disposes the resources.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.SelectionMode">
+            <summary>
+            Enumurates the selection mode of shape file  layer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.SelectionMode.Single">
+            <summary>
+            Represents the selection mode as single
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.SelectionMode.Multiple">
+            <summary>
+             Represents the selection mode as Multiple
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.GeometryType">
+            <summary>
+            Enumurates the geometry type of shape file  layer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.GeometryType.Points">
+            <summary>
+             Represents the geometry type as points
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.GeometryType.GeographicPoints">
+            <summary>
+             Represents the geometry type as geographic points
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.MapPointIcon">
+            <summary>
+            Enumurates the map pointer icon.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapPointIcon.Rectangle">
+            <summary>
+            Sets Rectangle Shape
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapPointIcon.Circle">
+            <summary>
+            Sets Circle Shape
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapPointIcon.Square">
+            <summary>
+            Sets Square Shape
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapPointIcon.Diamond">
+            <summary>
+            Sets Diamond Shape
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapPointIcon.Star">
+            <summary>
+            Sets Star Shape
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.LayerType">
+            <summary>
+            LayerType of Imagery Layer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.LayerType.OSM">
+            <summary>
+            Defines OSM layer type
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.LayerType.Bing">
+            <summary>
+            Defines Bing layer type
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.BingMapStyle">
+            <summary>
+            BingMapStyle of ImageryLayer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.BingMapStyle.Road">
+            <summary>
+            Defines Road view of bing map
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.BingMapStyle.Aerial">
+            <summary>
+            Defines Aerial view of bing map
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.BingMapStyle.AerialWithLabels">
+            <summary>
+            Defines AerialWithLabelViews of bing map
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.ShapeType">
+            <summary>
+            Gets or sets shape type.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeType.Polyline">
+            <summary>
+            Defines Polyline points in the collection
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeType.Polygon">
+            <summary>
+            Defines Polygon points in the collection
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeType.PointIcon">
+            <summary>
+            Defines Geo points in the collection
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.MapDependencyService">
+            <summary>
+            Represents the map dependency service.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapDependencyService.ReadAsJsonStream(System.IO.Stream,System.Object)">
+            <summary>
+            To read json stream.
+            </summary>
+            <param name="stream">to get stream.</param>
+            <param name="obj">to get object.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapDependencyService.ReadAsStream(System.IO.Stream,System.Object)">
+            <summary>
+            to read stream.
+            </summary>
+            <param name="stream">to get stream.</param>
+            <param name="obj">to get object.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapDependencyService.GetLatLonFromPoint(Xamarin.Forms.Point,System.Object)">
+            <summary>
+            To get latitude and longitude from point.
+            </summary>
+            <param name="value">to get value.</param>
+            <param name="obj">to get object.</param>
+            <returns>Returns the point.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapDependencyService.GeopointToViewPoint(System.Double,System.Double,System.Object)">
+            <summary>
+            To get point from latitude and longitude values.
+            </summary>
+            <param name="latitude">get latitude value.</param>
+            <param name="longitude">get longitude value.</param>
+            <param name="obj">get maps object.</param>
+            <returns>Returns the view point.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapDependencyService.DeleteTilesFromCache(System.Object)">
+            <summary>
+            To delete the tiles from application cache.
+            </summary>
+            <param name="obj">Maps native obj.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapDependencyService.SubscribeZoomLevelChanging(Syncfusion.SfMaps.XForms.ImageryLayer,System.Object)">
+            <summary>
+            To Subscribe the ZoomLevelChanging event.
+            </summary>
+            <param name="imageryLayer">ImageryLaer.</param>
+            <param name="nativeObject">Native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapDependencyService.SubscribeGeoCoordinateChanged(Syncfusion.SfMaps.XForms.ImageryLayer,System.Object)">
+            <summary>
+            To Subscribe the GeoCoordinateChanged event.
+            </summary>
+            <param name="imageryLayer">ImageryLaer.</param>
+            <param name="nativeObject">Native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapDependencyService.UnsubscribeGeoCoordinateChanged(Syncfusion.SfMaps.XForms.ImageryLayer,System.Object)">
+            <summary>
+            To UnSubscribe the GeoCoordinateChanged event.
+            </summary>
+            <param name="imageryLayer">ImageryLaer.</param>
+            <param name="nativeObject">Native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapDependencyService.UnsubscribeZoomLevelChanging(Syncfusion.SfMaps.XForms.ImageryLayer,System.Object)">
+            <summary>
+            To UnSubscribe the ZoomLevelChanging event.
+            </summary>
+            <param name="imageryLayer">ImageryLaer.</param>
+            <param name="nativeObject">Native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapDependencyService.SubscribeShapeSelectionChanged(Syncfusion.SfMaps.XForms.ShapeFileLayer,System.Object)">
+            <summary>
+            To Subscribe the SubscribeShapeSelection event.
+            </summary>
+            <param name="shapeFileLayer">ImageryLaer.</param>
+            <param name="nativeObject">Native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapDependencyService.UnsubscribeShapeSelectionChanged(Syncfusion.SfMaps.XForms.ShapeFileLayer,System.Object)">
+            <summary>
+            To Subscribe the UnsubscribeShapeSelection event.
+            </summary>
+            <param name="shapeFileLayer">ImageryLaer.</param>
+            <param name="nativeObject">Native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapDependencyService.SubscribeTooltipOpening(Syncfusion.SfMaps.XForms.SfMaps,System.Object)">
+            <summary>
+            To Subscribe the SubscribeTooltipOpening event.
+            </summary>
+            <param name="maps">SfMaps.</param>
+            <param name="nativeObject">Native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapDependencyService.UnsubscribeTooltipOpening(Syncfusion.SfMaps.XForms.SfMaps,System.Object)">
+            <summary>
+            To Subscribe the UnsubscribeTooltipOpening event.
+            </summary>
+            <param name="maps">SfMaps.</param>
+            <param name="nativeObject">Native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapDependencyService.ReadAsStream(System.IO.Stream,System.IO.Stream,System.Object)">
+            <summary>
+            To load the shape and db file from stream.
+            </summary>
+            <param name="shapeStream">shape file stream.</param>
+            <param name="dbStream">db file stream.</param>
+            <param name="obj">to get object.</param>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.MapLayer">
+            <summary>
+            Represents MapLayer. The MapLayer class servers as a base class for all the type of layers in the maps.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfMaps.XForms.MapLayer.MarkerSelected">
+            <summary>
+            Event raised when a marker is selected
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLayer.NativeMapObject">
+            <summary>
+            Gets or sets Native Map in Forms Layer object.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLayer.IsBindingContextChanged">
+            <summary>
+            Gets or sets a value indicating whether the binding context is changed or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapLayer.MarkersProperty">
+            <summary>
+            Gets or sets the marker property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLayer.Markers">
+            <summary>
+            Gets or sets the value for markers.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapLayer.MarkerItemsSourceProperty">
+            <summary>
+            Gets or sets the marker items source property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLayer.MarkerItemsSource">
+            <summary>
+            Gets or sets the <see cref="T:Syncfusion.SfMaps.XForms.MapMarker" /> markers collection to maps layer to add markers on maps. This property is recommended when using custom map markers that are inherited from <see cref="T:Syncfusion.SfMaps.XForms.MapMarker" /> and can only be used to assign markers in code behind. To add markers from XAML page, use Markers property of the layer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapLayer.MarkerSettingsProperty">
+            <summary>
+            Gets or setsv the marker setting property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLayer.MarkerSettings">
+            <summary>
+            Gets or sets the value for marker setting.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapLayer.MarkerTemplateProperty">
+            <summary>
+            Gets or sets the marker template property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLayer.MarkerTemplate">
+            <summary>
+            Gets or sets the value for marker template.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapLayer.SublayersProperty">
+            <summary>
+            Gets or sets the <see cref="P:Syncfusion.SfMaps.XForms.MapLayer.Sublayers"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLayer.Sublayers">
+            <summary>
+            Gets or sets the Sublayer for the map layer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLayer.ResetOldSelectedView">
+            <summary>
+            Gets or sets a value indicating whether need to reset previous marker selection view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapLayer.ResetOldSelectedViewProperty">
+            <summary>
+            Gets or sets whether need to reset previous marker selection view.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLayer.OnResetOldSelectedViewChanged(Xamarin.Forms.BindableObject,System.Boolean,System.Boolean)">
+            <summary>
+            This method is called when the ResetOldSelectedView value is changed.
+            </summary>
+            <param name="bindable">bindable object.</param>
+            <param name="oldValue">previous bool value.</param>
+            <param name="newValue">current bool value.</param>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLayer.IsSublayer">
+            <summary>
+            Gets or sets a value indicating whether the shape file layer is sub layer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLayer.IsBaseLayer">
+            <summary>
+            Gets or sets a value indicating whether the shape file layer is base layer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLayer.Properties">
+            <summary>
+            Gets or sets the value of Properties.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLayer.CanBringToTop">
+            <summary>
+            Gets or sets a value indicating whether the selected marker should bring to top.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLayer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.XForms.MapLayer" /> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLayer.UnhookEvent(Syncfusion.SfMaps.XForms.MapLayer)">
+            <summary>
+            Unhook the markers collection changed.
+            </summary>
+            <param name="mapLayer">Map layer.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLayer.OnMapMarkerSelected(Syncfusion.SfMaps.XForms.MapMarker)">
+            <summary>
+            This method is called when the map marker is selected.
+            </summary>
+            <param name="marker">Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLayer.GetLatLonFromPoint(Xamarin.Forms.Point)">
+            <summary>
+            Convert point X and point Y to longitude and latitude values.
+            </summary>
+            <param name="point">To get point x and y value.</param>
+            <returns>returns the longitude and latitude values.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLayer.GeopointToViewPoint(System.Double,System.Double)">
+            <summary>
+            Convert latitude and longitude values to view's x and y points.
+            </summary>
+            <param name="latitude">To get the latitude value.</param>
+            <param name="longitude">To get the longitude value.</param>
+            <returns>returns the point X and pointY values.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLayer.GetPointFromLatitudeLongitude(Xamarin.Forms.Point)">
+            <summary>
+            Convert latitude and longitude to point X and point Y.
+            </summary>
+            <param name="point">To get the latitude and longitude values.</param>
+            <returns>returns the point X and pointY values.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLayer.GetLatitudeLongitudeFromPoint(Xamarin.Forms.Point)">
+            <summary>
+            Convert point X and point Y to longitude and latitude values.
+            </summary>
+            <param name="point">To get point x and y value.</param>
+            <returns>returns the longitude and latitude values.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLayer.OnMarkerSelected(Syncfusion.SfMaps.XForms.MapMarker)">
+            <summary>
+            This method is called when the map marker is selected.
+            </summary>
+            <param name="selectedMarker">MapMarker.</param>
+            <returns>Custom View.</returns>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLayer.OnMarkersChanged(Xamarin.Forms.BindableObject,System.Collections.ObjectModel.ObservableCollection{Syncfusion.SfMaps.XForms.MapMarker},System.Collections.ObjectModel.ObservableCollection{Syncfusion.SfMaps.XForms.MapMarker})">
+            <summary>
+            This method is called markers value is changed.
+            </summary>
+            <param name="bindable">bindable object.</param>
+            <param name="oldValue">previous marker value.</param>
+            <param name="newValue">current marker value.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLayer.OnMarkerItemsSourceChanged(Xamarin.Forms.BindableObject,System.Collections.Generic.IEnumerable{Syncfusion.SfMaps.XForms.MapMarker},System.Collections.Generic.IEnumerable{Syncfusion.SfMaps.XForms.MapMarker})">
+            <summary>
+            This method is called marker items source value is changed.
+            </summary>
+            <param name="bindable">bindable object.</param>
+            <param name="oldValue">previous marker value.</param>
+            <param name="newValue">current marker value.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLayer.OnMarkerItemsSourceChanged(System.Collections.Generic.IEnumerable{Syncfusion.SfMaps.XForms.MapMarker},System.Collections.Generic.IEnumerable{Syncfusion.SfMaps.XForms.MapMarker})">
+            <summary>
+            This method is called markers collection is changed.
+            </summary>
+            <param name="oldValue">previous marker value.</param>
+            <param name="newValue">current marker value.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLayer.OnMarkerSettingsChanged(Xamarin.Forms.BindableObject,Syncfusion.SfMaps.XForms.MapMarkerSetting,Syncfusion.SfMaps.XForms.MapMarkerSetting)">
+            <summary>
+            This method is called when the marker setting value is changed.
+            </summary>
+            <param name="bindable">bindable object.</param>
+            <param name="oldValue">previous marker setting value.</param>
+            <param name="newValue">current marker setting value.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLayer.OnMarkerTemplateChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.DataTemplate,Xamarin.Forms.DataTemplate)">
+            <summary>
+            This method is called when the marker template value is changed.
+            </summary>
+            <param name="bindable">bindable object.</param>
+            <param name="oldValue">previous marker template.</param>
+            <param name="newValue">current marker value.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLayer.OnSublayerChanged(Xamarin.Forms.BindableObject,System.Collections.ObjectModel.ObservableCollection{Syncfusion.SfMaps.XForms.ShapeFileLayer},System.Collections.ObjectModel.ObservableCollection{Syncfusion.SfMaps.XForms.ShapeFileLayer})">
+            <summary>
+            This method is called when the sub layer value is changed.
+            </summary>
+            <param name="bindable">bindable object.</param>
+            <param name="oldValue">previous marker template.</param>
+            <param name="newValue">current marker value.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLayer.LayerPropertyChanged(System.String)">
+            <summary>
+            This method is called when the layer property is changed.
+            </summary>
+            <param name="propertyName">layer proeperty.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLayer.GetMarkerDefaultValue(Syncfusion.SfMaps.XForms.MapLayer)">
+            <summary>
+            This method set the default value for the Marker property.
+            </summary>
+            <param name="bindable">MapLayer property.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLayer.GetSublayerDefaultValue(Syncfusion.SfMaps.XForms.MapLayer)">
+            <summary>
+            Sets the default value for the Sublayers property.
+            </summary>
+            <param name="bindable">MapLayer property.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLayer.Syncfusion#XForms#Themes#IThemeElement#OnControlThemeChanged(System.String,System.String)">
+            <summary>
+            Called when the control theme is changed.
+            </summary>
+            <param name="oldTheme">Old Theme.</param>
+            <param name="newTheme">New Theme.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.MapLayer.Syncfusion#XForms#Themes#IThemeElement#OnCommonThemeChanged(System.String,System.String)">
+            <summary>
+            Called when the common theme is changed.
+            </summary>
+            <param name="oldTheme">Old Theme.</param>
+            <param name="newTheme">New Theme.</param>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.MarkerSelectedEventArgs">
+            <summary>
+            Class implemntation of MarkerEventArgs.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MarkerSelectedEventArgs.MapMarker">
+            <summary>
+            Gets or sets the value for MapMarker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MarkerSelectedEventArgs.CustomView">
+            <summary>
+            Gets or sets the value of CustomView.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MarkerSelectedEventArgs.CanBringToTop">
+            <summary>
+            Gets or sets the boolean value to bring the top position of selected marker.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.ShapeSelectedEventArgs">
+            <summary>
+            To get the selected shape properties.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSelectedEventArgs.Data">
+            <summary>
+            Gets the value of shape data.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSelectedEventArgs.IsSelected">
+            <summary>
+            Gets a value indicating whether the shape is selected.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.TooltipOpeningEventArgs">
+            <summary>
+            To get the tooltip properties.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TooltipOpeningEventArgs.Data">
+            <summary>
+            Gets the tooltip data property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TooltipOpeningEventArgs.Cancel">
+            <summary>
+            Gets or sets a value indicating whether the tooltip opening should be canceled or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TooltipOpeningEventArgs.TooltipType">
+            <summary>
+            Gets or internal sets the tooltip type.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.ShapeSetting">
+            <summary>
+            Represents ShapeSetting. To render this, create an instance of the <see cref="T:Syncfusion.SfMaps.XForms.ShapeSetting"/> class, and set required properties.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSetting.PropertiesChanged">
+            <summary>
+            Gets or sets the list of properties that are changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ShapeSetting.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.XForms.ShapeSetting" /> class to render the shape settings of the maps.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSetting.NativeObject">
+            <summary>
+            Gets or sets Native Layer in Forms Layer object.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeSetting.ShapeValuePathProperty">
+            <summary>
+            Gets or sets a value to the shape value path property of the shape setting in the maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSetting.ShapeValuePath">
+            <summary>
+            Gets or sets the field value to be fetched from data for each shape in the shape layer of the maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeSetting.ShapeColorValuePathProperty">
+            <summary>
+            Gets or sets a value to the shape color value path property of the shape settings in the maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSetting.ShapeColorValuePath">
+            <summary>
+            Gets or sets the field value to be fetched from data for each shape used to determine the shape color in the shape layer of the maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeSetting.ColorMappingsProperty">
+            <summary>
+            Gets or sets a value to the color mapping property of the shape settings in the maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSetting.ColorMappings">
+            <summary>
+            Gets or sets the colorMappings value from the maps. It represents the color given for the shapes in the shape layer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeSetting.ShapeFillProperty">
+            <summary>
+            Gets or sets a valueto the shape file property of the shape settings in the maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSetting.ShapeFill">
+            <summary>
+            Gets or sets the fill color of the shapes in the maps. It represents the single color of the shapes in the shape layer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeSetting.ShapeStrokeProperty">
+            <summary>
+            Gets or sets a value to the shape stoke property of the shape settings in the maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSetting.ShapeStroke">
+            <summary>
+            Gets or sets the shape stroke of the shapes in the maps. The default color of the shape stroke is white.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeSetting.ShapeStrokeThicknessProperty">
+            <summary>
+            Gets or sets a value to the shape stroke thickness property of the shape settings in the maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSetting.ShapeStrokeThickness">
+            <summary>
+            Gets or sets the border thickness of the shapes in the maps. The default value of the shape stroke is 0.5.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeSetting.SelectedShapeColorProperty">
+            <summary>
+            Gets or sets a value to the selected shape color property of the shape settings in the maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSetting.SelectedShapeColor">
+            <summary>
+            Gets or sets the selection color for shapes in the maps. The default value is dark gray for the selected shape.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeSetting.SelectedShapeStrokeProperty">
+            <summary>
+            Gets or sets a value to the selected shape stroke property of the shape settings in the maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSetting.SelectedShapeStroke">
+            <summary>
+            Gets or sets the border color of the selected shape in the maps. The default value is white for the selected shape stroke.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ShapeSetting.Syncfusion#XForms#Themes#IThemeElement#OnControlThemeChanged(System.String,System.String)">
+            <summary>
+            Called when the control theme is changed.
+            </summary>
+            <param name="oldTheme">Old Theme.</param>
+            <param name="newTheme">New Theme.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ShapeSetting.Syncfusion#XForms#Themes#IThemeElement#OnCommonThemeChanged(System.String,System.String)">
+            <summary>
+            Called when the common theme is changed.
+            </summary>
+            <param name="oldTheme">Old Theme.</param>
+            <param name="newTheme">New Theme.</param>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.ShapeSetting.SelectedShapeStrokeThicknessProperty">
+            <summary>
+            Gets or sets a value to the selected shape stoke thickness property of the shape settings in the maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSetting.SelectedShapeStrokeThickness">
+            <summary>
+            Gets or sets the border thickness of the selected shape in the maps. The default value is 0.5 for the selected shape stroke thickness.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.TooltipSetting">
+            <summary>
+            Represents TooltipSetting. To render this, create an instance of the <see cref="T:Syncfusion.SfMaps.XForms.TooltipSetting"/> class and set required properties.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.TooltipSetting.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.XForms.TooltipSetting" /> class to render the tooltip of the map.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TooltipSetting.PropertiesChanged">
+            <summary>
+            Gets or sets the list of properties that are changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TooltipSetting.NativeObject">
+            <summary>
+            Gets or sets the native object.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TooltipSetting.ShowTooltip">
+            <summary>
+            Gets or sets a value indicating whether the tooltip is visible in the maps. The default value is false.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.TooltipSetting.ShowTooltipProperty">
+            <summary>
+            Gets or sets a value that indicates whether the tooltip property is visible in the maps. The default value is false. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TooltipSetting.Duration">
+            <summary>
+            Gets or sets the duration for the tooltip in the maps. The default value is 1. It represents how long the tooltip needs to be visible.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.TooltipSetting.DurationProperty">
+            <summary>
+            Gets or sets the duration property for the tooltip in the maps. The default value is 1. It represents how long the tooltip needs to be visible.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TooltipSetting.BackgroundColor">
+            <summary>
+            Gets or sets the background color for the tooltips in the maps. The default color of the tooltip is gray.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.TooltipSetting.BackgroundColorProperty">
+            <summary>
+            Gets or sets the background color property for the tooltips in the maps. The default color of the tooltip is gray. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TooltipSetting.TextColor">
+            <summary>
+            Gets or sets the text color for the tooltips in the maps. The default color of the text in the tooltip is white.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.TooltipSetting.TextColorProperty">
+            <summary>
+            Gets or sets the text color property for the tooltip in the maps. The default color of the text in tooltip is white. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TooltipSetting.StrokeWidth">
+            <summary>
+            Gets or sets the stroke width for the tooltips in the maps. The default stroke width of the tooltip is 1.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.TooltipSetting.StrokeWidthProperty">
+            <summary>
+            Gets or sets the stroke width property for the tooltips in the maps. The default stroke width of the tooltip is 1. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TooltipSetting.StrokeColor">
+            <summary>
+            Gets or sets the stroke color for the tooltip in the maps. The default stroke color of the tooltip is light gray.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.TooltipSetting.StrokeColorProperty">
+            <summary>
+            Gets or sets the stroke color property for the tooltip in the maps. The default stroke color of the tooltip is light gray. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TooltipSetting.FontFamily">
+            <summary>
+            Gets or sets the font family for the tooltip in the maps. The default font family is used in the tooltip of the maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.TooltipSetting.FontFamilyProperty">
+            <summary>
+            Gets or sets the font family property for the tooltip in the maps. The default font family is used in the tooltip of the maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TooltipSetting.FontSize">
+            <summary>
+            Gets or sets the font size for the tooltip in the maps. The default font size is 11 for the tooltip of the maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.TooltipSetting.FontSizeProperty">
+            <summary>
+            Gets or sets the font size property for the tooltip in the maps. The default font size is 11 for the tooltip of the map. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TooltipSetting.FontAttributes">
+            <summary>
+            Gets or sets the font attribute for the tooltip in the maps. The default font attribute is None for the tooltip of the maps.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.TooltipSetting.FontAttributesProperty">
+            <summary>
+            Gets or sets the font attribute for the tooltips in the maps. The default font attribute is None for the tooltip of the maps. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TooltipSetting.TooltipTemplate">
+            <summary>
+            Gets or sets the tooltip template for the tooltips in the maps. It is used to give different views to the tooltips.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.TooltipSetting.TooltipTemplateProperty">
+            <summary>
+            Gets or sets the tooltip template for the tooltips in the maps. It is used to give different view in the tooltips. This is bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TooltipSetting.ValuePath">
+            <summary>
+            Gets or sets the value path for the tooltip in the maps. It represents the value that is displayed in the tooltip.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.TooltipSetting.ValuePathProperty">
+            <summary>
+            Gets or sets the value path for the tooltip in the maps. It represents the value that is displayed in the tooltip. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TooltipSetting.PointerLength">
+            <summary>
+            Gets or sets the pointer length for the tooltips in the maps. The default value of the pointer length is 8.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.TooltipSetting.PointerLengthProperty">
+            <summary>
+            Gets or sets the pointer length for the tooltips in the maps. The default value of the pointer length is 8. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TooltipSetting.EnableAnimation">
+            <summary>
+            Gets or sets a value indicating whether the animation of the tooltip in the map is enabled. The default value of the animation is true.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.TooltipSetting.EnableAnimationProperty">
+            <summary>
+            Gets or sets a value that indicates whether the animation of the tooltip in the map is enabled. The default value of the animation is true.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.TooltipSetting.Margin">
+            <summary>
+            Gets or sets the margin for the tooltip in the maps. The default value of the margin is 5 for the tooltip.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.TooltipSetting.MarginProperty">
+            <summary>
+            Gets or sets the margin for the tooltip in the maps. The default value of the margin is 5 for the tooltip. This is a bindable property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.TooltipSetting.Syncfusion#XForms#Themes#IThemeElement#OnControlThemeChanged(System.String,System.String)">
+            <summary>
+            Called when the control theme is changed.
+            </summary>
+            <param name="oldTheme">Old Theme.</param>
+            <param name="newTheme">New Theme.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.TooltipSetting.Syncfusion#XForms#Themes#IThemeElement#OnCommonThemeChanged(System.String,System.String)">
+            <summary>
+            Called when the common theme is changed.
+            </summary>
+            <param name="oldTheme">Old Theme.</param>
+            <param name="newTheme">New Theme.</param>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.SfMapsStyles.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfMaps.XForms.SfMapsStyles"/> class.
+            </summary>
+        </member>
+    </members>
+</doc>

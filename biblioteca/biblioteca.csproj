@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Xamarin.Forms.4.5.0.617\build\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.4.5.0.617\build\Xamarin.Forms.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F1121741-6D4D-4D2D-BC0E-6D91F3D83293}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>biblioteca</RootNamespace>
+    <AssemblyName>biblioteca</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=8.0.24.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Core.XForms, Version=19.1451.0.69, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.Core.19.1.0.69\lib\netstandard2.0\Syncfusion.Core.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=19.1460.0.69, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Licensing.19.1.0.69\lib\net46\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfMaps.XForms, Version=19.1451.0.69, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfMaps.19.1.0.69\lib\netstandard2.0\Syncfusion.SfMaps.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.4.5.0.617\lib\netstandard2.0\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.4.5.0.617\lib\netstandard2.0\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.4.5.0.617\lib\netstandard2.0\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro Editora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro Editora.Designer.cs">
+      <DependentUpon>Cadastro Editora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro Autor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro Autor.Designer.cs">
+      <DependentUpon>Cadastro Autor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmação de Devolução.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirmação de Devolução.Designer.cs">
+      <DependentUpon>Confirmação de Devolução.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tela Inicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela Inicial.Designer.cs">
+      <DependentUpon>Tela Inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro ADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro ADM.Designer.cs">
+      <DependentUpon>Cadastro ADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastrar Livro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastrar Livro.Designer.cs">
+      <DependentUpon>Cadastrar Livro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empréstimos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empréstimos.Designer.cs">
+      <DependentUpon>Empréstimos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Devolução.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devolução.Designer.cs">
+      <DependentUpon>Devolução.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro Usuário.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro Usuário.Designer.cs">
+      <DependentUpon>Cadastro Usuário.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro Gênero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro Gênero.Designer.cs">
+      <DependentUpon>Cadastro Gênero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro Editora.resx">
+      <DependentUpon>Cadastro Editora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro Autor.resx">
+      <DependentUpon>Cadastro Autor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirmação de Devolução.resx">
+      <DependentUpon>Confirmação de Devolução.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela Inicial.resx">
+      <DependentUpon>Tela Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro ADM.resx">
+      <DependentUpon>Cadastro ADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastrar Livro.resx">
+      <DependentUpon>Cadastrar Livro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empréstimos.resx">
+      <DependentUpon>Empréstimos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devolução.resx">
+      <DependentUpon>Devolução.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro Usuário.resx">
+      <DependentUpon>Cadastro Usuário.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro Gênero.resx">
+      <DependentUpon>Cadastro Gênero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MicrosoftTeams-image-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MicrosoftTeams-image-removebg-preview %281%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\library-book-shelf-literature-books-cartoon-vector-21597741.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flat_restart_icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check+checkbox+checkmark+confirm+success+yes+icon-1320196711226060446_512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s-l400.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-library-cartoon-banner-illustration-image_155272.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1162434845-170667a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\65-654261_material-icon-plus-icon-add-download-telegram-hd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red-x-red-x-11563060665ltfumg5kvi.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.4.5.0.617\build\Xamarin.Forms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.4.5.0.617\build\Xamarin.Forms.props'))" />
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.4.5.0.617\build\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.4.5.0.617\build\Xamarin.Forms.targets'))" />
+  </Target>
+  <Import Project="..\packages\Xamarin.Forms.4.5.0.617\build\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.4.5.0.617\build\Xamarin.Forms.targets')" />
+</Project>
